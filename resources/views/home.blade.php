@@ -24,6 +24,21 @@
             <input type="submit" value="Add Repository">
         </form>
     </div>
+    <div>
+        <h2>Repositories</h2>
+        <ul>
+            @foreach($repositories as $repository)
+            <li>
+                <a href="/pull-requests/{{$repository->owner}}/{{$repository->name}}">
+                    {{$repository->owner}}/{{$repository->name}}
+                </a>
+                <form action="/delete-repo/{{$repository->id}}" method="POST">
+                    @csrf
+                    <input type="submit" value="Delete">
+                </form>
+            </li>
+            @endforeach
+    </div>
     @else
     <div>
         <h2>Register</h2>

@@ -9,6 +9,17 @@ class RepositoryController extends Controller
 {
     //
 
+    public function index()
+    {
+        if (!auth()->check()) {
+            return redirect('/');
+        }
+
+        return view('home', [
+            'repositories' => Repository::all()
+        ]);
+    }
+
     public function store(Request $request)
     {
         if (!auth()->check()) {
@@ -29,6 +40,18 @@ class RepositoryController extends Controller
         $repository->name = $request->repoName;
 
         $repository->save();
+
+        return redirect('/');
+    }
+
+    public function delete($id)
+    {
+        if (!auth()->check()) {
+            return redirect('/');
+        }
+
+        $repository = Repository::findOrFail($id);
+        $repository->delete();
 
         return redirect('/');
     }

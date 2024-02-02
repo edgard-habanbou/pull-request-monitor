@@ -4,9 +4,13 @@ use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PullRequestController;
 use App\Http\Controllers\RepositoryController;
+use App\Models\Repository;
 
 Route::get('/', function () {
-    return view('login');
+
+    return view('home', [
+        'repositories' => Repository::all()
+    ]);
 });
 
 Route::get('/pull-requests/{ownerName}/{repoName}', [PullRequestController::class, 'Main']);
