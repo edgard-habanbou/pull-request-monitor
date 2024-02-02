@@ -23,4 +23,15 @@ class PullRequestController extends Controller
             return response()->json(['error' => $e->getMessage()], 500);
         }
     }
+
+    public function fetchOldOpenPullRequests($pullRequests)
+    {
+        $oldPullRequests = [];
+        foreach ($pullRequests as $pullRequest) {
+            if (strtotime($pullRequest['created_at']) < strtotime('-14 days')) {
+                $oldPullRequests[] = $pullRequest;
+            }
+        }
+        return $oldPullRequests;
+    }
 }
