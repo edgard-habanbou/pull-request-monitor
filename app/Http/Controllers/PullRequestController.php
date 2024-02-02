@@ -76,15 +76,21 @@ class PullRequestController extends Controller
 
     public function writeToTxtFile($fileName, $data)
     {
-        // check if file exists
-        if (file_exists($fileName)) {
-            // if file exists, delete it
-            unlink($fileName);
+        try {
+            // check if file exists
+            if (file_exists($fileName)) {
+                // if file exists, delete it
+                unlink($fileName);
+            }
+            // create a new file
+            $file = fopen($fileName, "w");
+            fwrite($file, $data);
+            fclose($file);
+        } catch (\Exception $e) {
+            return response()->json([
+                'error' => $e->getMessage()
+            ]);
         }
-        // create a new file
-        $file = fopen($fileName, "w");
-        fwrite($file, $data);
-        fclose($file);
     }
 
     private function writeData($fileName, $pullRequests)
