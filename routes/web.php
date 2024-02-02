@@ -12,3 +12,5 @@ Route::get('/', function () {
 Route::get('/pull-requests/{ownerName}/{repoName}', [PullRequestController::class, 'Main']);
 
 Route::post('/register', [AuthController::class, 'register']);
+Route::post('/logout', [AuthController::class, 'logout']);
+Route::post('/login', [AuthController::class, 'login']);
