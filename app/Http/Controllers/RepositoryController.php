@@ -9,29 +9,27 @@ class RepositoryController extends Controller
 {
     //
 
-    public function index()
-    {
-        return view('repositories.index');
-    }
-
-    public function create()
-    {
-        return view('repositories.create');
-    }
-
     public function store(Request $request)
     {
+        if (!auth()->check()) {
+            return redirect('/');
+        }
+
         $repository = new Repository();
         //validate data
-        $request->validate([
-            'owner' => 'required',
-            'name' => 'required'
+        $fields = $request->validate([
+            'ownerName' => 'required',
+            'repoName' => 'required'
         ]);
-        $repository->owner = $request->owner;
-        $repository->name = $request->name;
+
+        $fields['ownerName'] = strip_tags($fields['ownerName']);
+        $fields['repoName'] = strip_tags($fields['repoName']);
+
+        $repository->owner = $request->ownerName;
+        $repository->name = $request->repoName;
 
         $repository->save();
 
-        return redirect()->route('repositories.index');
+        return redirect('/');
     }
 }

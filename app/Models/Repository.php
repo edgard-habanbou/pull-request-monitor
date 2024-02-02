@@ -9,5 +9,5 @@ class Repository extends Model
 {
     use HasFactory;
 
-    private $fillable = ['owner', 'name'];
+    protected $fillable = ['owner', 'name'];
 }

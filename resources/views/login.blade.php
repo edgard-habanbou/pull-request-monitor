@@ -8,11 +8,22 @@
 
 <body>
     @auth
-    <h2>Logout</h2>
-    <form action="/logout" method="POST">
-        @csrf
-        <input type="submit" value="Logout">
-    </form>
+    <div>
+        <h2>Logout</h2>
+        <form action="/logout" method="POST">
+            @csrf
+            <input type="submit" value="Logout">
+        </form>
+    </div>
+    <div>
+        <h2>Add Repository</h2>
+        <form action="/add-repo" method="POST">
+            @csrf
+            <input type="text" name="ownerName" placeholder="Owner Name">
+            <input type="text" name="repoName" placeholder="Repository Name">
+            <input type="submit" value="Add Repository">
+        </form>
+    </div>
     @else
     <div>
         <h2>Register</h2>
