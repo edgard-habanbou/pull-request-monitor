@@ -72,10 +72,34 @@ class PullRequestController extends Controller
         ]);
     }
 
+
+
     public function writeToTxtFile($fileName, $data)
     {
+        // check if file exists
+        if (file_exists($fileName)) {
+            // if file exists, delete it
+            unlink($fileName);
+        }
+        // create a new file
         $file = fopen($fileName, "w");
         fwrite($file, $data);
         fclose($file);
+    }
+
+    private function writeData($fileName, $pullRequests)
+    {
+        $data = "";
+        foreach ($pullRequests as $pullRequest) {
+            $data .= "ID: " . $pullRequest["id"] . "\n";
+            $data .= "Title: " . $pullRequest["title"] . "\n";
+            $data .= "URL: " . $pullRequest["html_url"] . "\n";
+            $data .= "Created at: " . $pullRequest["created_at"] . "\n";
+            $data .= "Updated at: " . $pullRequest["updated_at"] . "\n";
+            $data .= "User: " . $pullRequest["user"]["login"] . "\n";
+            $data .= "User URL: " . $pullRequest["user"]["html_url"] . "\n";
+            $data .= "----------------------------------------------------------------------\n";
+        }
+        $this->writeToTxtFile($fileName, $data);
     }
 }
