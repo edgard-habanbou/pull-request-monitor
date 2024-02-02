@@ -53,15 +53,23 @@ class PullRequestController extends Controller
         // Fetch pull requests that are older than two weeks
         $twoWeeksAgo = date('Y-m-d', strtotime('-2 weeks'));
         $oldPullRequests = $this->fetchPullRequests("+created:<" . $twoWeeksAgo, $ownerName, $repoName);
+        // Write the data to a file
+        $this->writeData("oldPullRequests.txt", $oldPullRequests);
 
         // Fetch pull requests that require review
         $pullRequestsWithReviewRequired = $this->fetchPullRequests("+review:required", $ownerName, $repoName);
+        // Write the data to a file
+        $this->writeData("pullRequestsWithReviewRequired.txt", $pullRequestsWithReviewRequired);
 
         // Fetch pull requests where review status is none
         $pullRequestsWithReviewNone = $this->fetchPullRequests("+review:none", $ownerName, $repoName);
+        // Write the data to a file
+        $this->writeData("pullRequestsWithReviewNone.txt", $pullRequestsWithReviewNone);
 
         // Fetch pull requests where review status is success
         $pullRequestsWithReviewSuccess = $this->fetchPullRequests("+review:success", $ownerName, $repoName);
+        // Write the data to a file
+        $this->writeData("pullRequestsWithReviewSuccess.txt", $pullRequestsWithReviewSuccess);
 
 
         return response()->json([
@@ -74,7 +82,7 @@ class PullRequestController extends Controller
 
 
 
-    public function writeToTxtFile($fileName, $data)
+    private function writeToTxtFile($fileName, $data)
     {
         try {
             // check if file exists
