@@ -6,12 +6,12 @@ use GuzzleHttp\Client;
 
 class PullRequestController extends Controller
 {
-    public function fetchPullRequests($parameter)
+    public function fetchPullRequests($parameter, $ownerName, $repoName)
     {
         try {
             // Fetch pull requests from GitHub
             $client = new Client();
-            $response = $client->request('GET', 'https://api.github.com/search/issues?q=is:pr+is:open+repo:woocommerce/woocommerce' . $parameter, [
+            $response = $client->request('GET', 'https://api.github.com/search/issues?q=is:pr+is:open+repo:' . $ownerName . "/" . $repoName . $parameter, [
                 'headers' => [
                     'Accept' => 'application/vnd.github+json',
                     'Authorization' => 'Bearer ' . env('GITHUB_ACCESS_TOKEN'),
@@ -43,20 +43,20 @@ class PullRequestController extends Controller
 
 
 
-    public function Main()
+    public function Main($ownerName, $repoName)
     {
         // Fetch pull requests that are older than two weeks
         $twoWeeksAgo = date('Y-m-d', strtotime('-2 weeks'));
-        $oldPullRequests = $this->fetchPullRequests("+created:<" . $twoWeeksAgo);
+        $oldPullRequests = $this->fetchPullRequests("+created:<" . $twoWeeksAgo, $ownerName, $repoName);
 
         // Fetch pull requests that require review
-        $pullRequestsWithReviewRequired = $this->fetchPullRequests("+review:required");
+        $pullRequestsWithReviewRequired = $this->fetchPullRequests("+review:required", $ownerName, $repoName);
 
         // Fetch pull requests where review status is none
-        $pullRequestsWithReviewNone = $this->fetchPullRequests("+review:none");
+        $pullRequestsWithReviewNone = $this->fetchPullRequests("+review:none", $ownerName, $repoName);
 
         // Fetch pull requests where review status is success
-        $pullRequestsWithReviewSuccess = $this->fetchPullRequests("+review:success");
+        $pullRequestsWithReviewSuccess = $this->fetchPullRequests("+review:success", $ownerName, $repoName);
 
 
         return response()->json([

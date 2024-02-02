@@ -8,4 +8,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pull-requests', [PullRequestController::class, 'Main']);
+Route::get('/pull-requests/{ownerName}/{repoName}', [PullRequestController::class, 'Main']);
