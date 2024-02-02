@@ -29,9 +29,9 @@
         <ul>
             @foreach($repositories as $repository)
             <li>
-                <a href="/pull-requests/{{$repository->owner}}/{{$repository->name}}">
+                <h4>
                     {{$repository->owner}}/{{$repository->name}}
-                </a>
+                </h4>
                 <form action="/delete-repo/{{$repository->id}}" method="POST">
                     @csrf
                     <input type="submit" value="Delete">

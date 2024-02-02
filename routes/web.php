@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/pull-requests', [PullRequestController::class, 'Main']);
+Route::get('/pullrequests', [PullRequestController::class, 'Main']);
 
 // Auth routes
 Route::post('/register', [AuthController::class, 'register']);
