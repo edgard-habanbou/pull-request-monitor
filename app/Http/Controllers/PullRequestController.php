@@ -24,8 +24,25 @@ class PullRequestController extends Controller
 
     public function Main()
     {
+        // Fetch pull requests that are older than two weeks
         $twoWeeksAgo = date('Y-m-d', strtotime('-2 weeks'));
         $oldPullRequests = $this->fetchPullRequests("+created:<" . $twoWeeksAgo);
-        return response()->json($oldPullRequests);
+
+        // Fetch pull requests that require review
+        $pullRequestsWithReviewRequired = $this->fetchPullRequests("+review:required");
+
+        // Fetch pull requests where review status is none
+        $pullRequestsWithReviewNone = $this->fetchPullRequests("+review:none");
+
+        // Fetch pull requests where review status is success
+        $pullRequestsWithReviewSuccess = $this->fetchPullRequests("+review:success");
+
+
+        return response()->json([
+            'oldPullRequests' => $oldPullRequests,
+            'pullRequestsWithReviewRequired' => $pullRequestsWithReviewRequired,
+            'pullRequestsWithReviewNone' => $pullRequestsWithReviewNone,
+            'pullRequestsWithReviewSuccess' => $pullRequestsWithReviewSuccess
+        ]);
     }
 }
