@@ -5,7 +5,7 @@ use App\Http\Controllers\PullRequestController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 Route::get('/pull-requests/{ownerName}/{repoName}', [PullRequestController::class, 'Main']);
