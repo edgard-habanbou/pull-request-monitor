@@ -82,7 +82,7 @@ ID: 2077478394
 Title: adding context to UX documentation
 URL: https://github.com/woocommerce/woocommerce/pull/43535
 Created at: 2024-01-11T19:55:17Z
-Updated at: 2024-02-02T16:02:55Z
+Updated at: 2024-02-02T16:31:47Z
 User: brentmackinnon
 User URL: https://github.com/brentmackinnon
 ----------------------------------------------------------------------
@@ -98,7 +98,7 @@ ID: 2076347441
 Title: Add the Receipts Rendering Engine
 URL: https://github.com/woocommerce/woocommerce/pull/43502
 Created at: 2024-01-11T11:18:35Z
-Updated at: 2024-02-02T12:44:17Z
+Updated at: 2024-02-02T16:23:00Z
 User: Konamiman
 User URL: https://github.com/Konamiman
 ----------------------------------------------------------------------
@@ -237,4 +237,1260 @@ Created at: 2023-12-20T19:20:56Z
 Updated at: 2024-01-31T18:45:53Z
 User: pintend
 User URL: https://github.com/pintend
+----------------------------------------------------------------------
+ID: 2050404790
+Title: Fix - Express payments that have errors cause the whole block to stop working
+URL: https://github.com/woocommerce/woocommerce/pull/42988
+Created at: 2023-12-20T11:54:51Z
+Updated at: 2023-12-20T12:23:52Z
+User: tarunvijwani
+User URL: https://github.com/tarunvijwani
+----------------------------------------------------------------------
+ID: 2045899186
+Title: admin.scss, Images within "variable product" in a square aspect ratio…
+URL: https://github.com/woocommerce/woocommerce/pull/42896
+Created at: 2023-12-18T07:22:18Z
+Updated at: 2024-01-08T09:53:49Z
+User: TITIR1X
+User URL: https://github.com/TITIR1X
+----------------------------------------------------------------------
+ID: 2044541442
+Title: Bump octokit from 2.1.0 to 3.1.2
+URL: https://github.com/woocommerce/woocommerce/pull/42891
+Created at: 2023-12-16T01:06:06Z
+Updated at: 2024-01-15T20:31:09Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 2041897521
+Title: Fix the current order billing or shipping country not being available for edit if that country is no longer allowed
+URL: https://github.com/woocommerce/woocommerce/pull/42827
+Created at: 2023-12-14T15:07:06Z
+Updated at: 2024-01-12T09:35:28Z
+User: webdados
+User URL: https://github.com/webdados
+----------------------------------------------------------------------
+ID: 2041493283
+Title: Bump simple-git from 3.5.0 to 3.16.0 in /tools/compare-perf
+URL: https://github.com/woocommerce/woocommerce/pull/42815
+Created at: 2023-12-14T11:22:44Z
+Updated at: 2023-12-14T11:25:36Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 2041009053
+Title: Make the structured data price of group products refer to the latest child product price
+URL: https://github.com/woocommerce/woocommerce/pull/42808
+Created at: 2023-12-14T06:31:45Z
+Updated at: 2023-12-14T06:32:30Z
+User: mt8
+User URL: https://github.com/mt8
+----------------------------------------------------------------------
+ID: 2033853250
+Title: Bump fast-xml-parser from 4.2.4 to 4.2.5
+URL: https://github.com/woocommerce/woocommerce/pull/41982
+Created at: 2023-12-09T13:35:14Z
+Updated at: 2024-01-08T18:13:54Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 2033641538
+Title: Bump fast-xml-parser from 4.2.4 to 4.2.5 in /plugins/woocommerce-blocks
+URL: https://github.com/woocommerce/woocommerce/pull/41973
+Created at: 2023-12-09T05:49:50Z
+Updated at: 2024-01-13T04:32:24Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 2033641532
+Title: Bump axios from 0.27.2 to 1.6.0 in /plugins/woocommerce-blocks
+URL: https://github.com/woocommerce/woocommerce/pull/41972
+Created at: 2023-12-09T05:49:49Z
+Updated at: 2024-01-13T04:32:23Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 2026719046
+Title: Add new hook: woocommerce_before_cart_totals_table
+URL: https://github.com/woocommerce/woocommerce/pull/41890
+Created at: 2023-12-05T17:06:29Z
+Updated at: 2023-12-05T22:55:23Z
+User: BusinessBloomer
+User URL: https://github.com/BusinessBloomer
+----------------------------------------------------------------------
+ID: 2026362140
+Title: New woocommerce_cart_totals_after_table action
+URL: https://github.com/woocommerce/woocommerce/pull/41881
+Created at: 2023-12-05T14:36:39Z
+Updated at: 2023-12-07T10:12:43Z
+User: BusinessBloomer
+User URL: https://github.com/BusinessBloomer
+----------------------------------------------------------------------
+ID: 2025990246
+Title: [POC] Some bits showcasing an unified code, REST and GraphQL API
+URL: https://github.com/woocommerce/woocommerce/pull/41877
+Created at: 2023-12-05T11:36:45Z
+Updated at: 2023-12-11T08:38:46Z
+User: Konamiman
+User URL: https://github.com/Konamiman
+----------------------------------------------------------------------
+ID: 2023750776
+Title: Update extension-developer-handbook.md to include changelog file details
+URL: https://github.com/woocommerce/woocommerce/pull/41855
+Created at: 2023-12-04T12:31:33Z
+Updated at: 2023-12-06T01:53:29Z
+User: mattyza
+User URL: https://github.com/mattyza
+----------------------------------------------------------------------
+ID: 2022195468
+Title: Update payment-gateway-api.md
+URL: https://github.com/woocommerce/woocommerce/pull/41850
+Created at: 2023-12-02T20:38:04Z
+Updated at: 2023-12-02T20:38:28Z
+User: UVLabs
+User URL: https://github.com/UVLabs
+----------------------------------------------------------------------
+ID: 2015583200
+Title: Update states.php -> Add Morocco regions
+URL: https://github.com/woocommerce/woocommerce/pull/41769
+Created at: 2023-11-29T00:39:29Z
+Updated at: 2024-01-11T01:07:39Z
+User: psealock
+User URL: https://github.com/psealock
+----------------------------------------------------------------------
+ID: 2014981847
+Title: My Subscriptions feature flag
+URL: https://github.com/woocommerce/woocommerce/pull/41762
+Created at: 2023-11-28T17:47:04Z
+Updated at: 2023-11-30T17:21:10Z
+User: andfinally
+User URL: https://github.com/andfinally
+----------------------------------------------------------------------
+ID: 2012992760
+Title: Revert loading strategy for checkout.js to `in_footer`
+URL: https://github.com/woocommerce/woocommerce/pull/41716
+Created at: 2023-11-27T19:55:02Z
+Updated at: 2024-01-05T17:38:59Z
+User: coreymckrill
+User URL: https://github.com/coreymckrill
+----------------------------------------------------------------------
+ID: 2012483523
+Title: Bump axios to 1.6.0
+URL: https://github.com/woocommerce/woocommerce/pull/41705
+Created at: 2023-11-27T15:07:06Z
+Updated at: 2023-11-27T22:06:29Z
+User: lsinger
+User URL: https://github.com/lsinger
+----------------------------------------------------------------------
+ID: 2011134901
+Title: Update/new editor downloads section view file
+URL: https://github.com/woocommerce/woocommerce/pull/41694
+Created at: 2023-11-26T17:51:33Z
+Updated at: 2023-11-28T10:16:46Z
+User: n2erjo00
+User URL: https://github.com/n2erjo00
+----------------------------------------------------------------------
+ID: 2009527122
+Title: Tio borracho shipping methods
+URL: https://github.com/woocommerce/woocommerce/pull/41671
+Created at: 2023-11-24T10:58:16Z
+Updated at: 2024-01-03T04:03:44Z
+User: TioBorracho
+User URL: https://github.com/TioBorracho
+----------------------------------------------------------------------
+ID: 2005292720
+Title: Update extension-developer-handbook.md
+URL: https://github.com/woocommerce/woocommerce/pull/41622
+Created at: 2023-11-21T23:08:00Z
+Updated at: 2023-11-21T23:35:19Z
+User: jdevieux
+User URL: https://github.com/jdevieux
+----------------------------------------------------------------------
+ID: 2004426315
+Title: In-App Marketplace: record page views at the end of the `useEffect` hook
+URL: https://github.com/woocommerce/woocommerce/pull/41604
+Created at: 2023-11-21T14:36:24Z
+Updated at: 2023-11-23T07:17:26Z
+User: andfinally
+User URL: https://github.com/andfinally
+----------------------------------------------------------------------
+ID: 2004223006
+Title: Create a new Playwright project for new product experience
+URL: https://github.com/woocommerce/woocommerce/pull/41601
+Created at: 2023-11-21T12:52:28Z
+Updated at: 2024-02-01T21:13:41Z
+User: octaedro
+User URL: https://github.com/octaedro
+----------------------------------------------------------------------
+ID: 2001037918
+Title: Remove deprecated calls in class-wc-checkout.php
+URL: https://github.com/woocommerce/woocommerce/pull/41567
+Created at: 2023-11-19T21:11:57Z
+Updated at: 2023-11-21T22:06:21Z
+User: tivnet
+User URL: https://github.com/tivnet
+----------------------------------------------------------------------
+ID: 1999673793
+Title: Store Customization > Update the position for patterns on templates two and three
+URL: https://github.com/woocommerce/woocommerce/pull/41551
+Created at: 2023-11-17T18:08:35Z
+Updated at: 2023-12-07T13:37:22Z
+User: nefeline
+User URL: https://github.com/nefeline
+----------------------------------------------------------------------
+ID: 1991467225
+Title:  Add a filter `woocommerce_admin_terms_metabox_datalimit` to change the data-limit value for the attributes term box 
+URL: https://github.com/woocommerce/woocommerce/pull/41411
+Created at: 2023-11-13T20:54:04Z
+Updated at: 2024-02-02T13:41:35Z
+User: Babylon1999
+User URL: https://github.com/Babylon1999
+----------------------------------------------------------------------
+ID: 1987398566
+Title: Bump axios from 0.24.0 to 1.6.0
+URL: https://github.com/woocommerce/woocommerce/pull/41360
+Created at: 2023-11-10T10:57:38Z
+Updated at: 2023-12-22T17:59:52Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 1986458103
+Title: Dev Tools: View template and template events
+URL: https://github.com/woocommerce/woocommerce/pull/41346
+Created at: 2023-11-09T21:50:42Z
+Updated at: 2023-12-14T20:42:03Z
+User: mattsherman
+User URL: https://github.com/mattsherman
+----------------------------------------------------------------------
+ID: 1980018153
+Title: Apply Rector suggestions for PHP 8.1
+URL: https://github.com/woocommerce/woocommerce/pull/41253
+Created at: 2023-11-06T20:37:44Z
+Updated at: 2024-01-23T18:27:40Z
+User: asumaran
+User URL: https://github.com/asumaran
+----------------------------------------------------------------------
+ID: 1976278954
+Title: Woo AI - Add a changelog.txt file for automation.
+URL: https://github.com/woocommerce/woocommerce/pull/41215
+Created at: 2023-11-03T14:05:29Z
+Updated at: 2023-11-17T18:46:22Z
+User: tommyshellberg
+User URL: https://github.com/tommyshellberg
+----------------------------------------------------------------------
+ID: 1970277979
+Title: Wip/test pr review ping
+URL: https://github.com/woocommerce/woocommerce/pull/41132
+Created at: 2023-10-31T11:44:17Z
+Updated at: 2023-10-31T12:41:33Z
+User: rodelgc
+User URL: https://github.com/rodelgc
+----------------------------------------------------------------------
+ID: 1969988120
+Title: Bump react-devtools-core from 4.24.0 to 4.28.5
+URL: https://github.com/woocommerce/woocommerce/pull/41128
+Created at: 2023-10-31T09:16:51Z
+Updated at: 2023-11-30T11:54:28Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 1969162858
+Title: Add Plugin Check workflow
+URL: https://github.com/woocommerce/woocommerce/pull/41105
+Created at: 2023-10-30T20:31:24Z
+Updated at: 2023-10-30T20:44:27Z
+User: adamsilverstein
+User URL: https://github.com/adamsilverstein
+----------------------------------------------------------------------
+ID: 1968054998
+Title: Filter an importing row.
+URL: https://github.com/woocommerce/woocommerce/pull/41089
+Created at: 2023-10-30T10:50:55Z
+Updated at: 2023-10-31T11:31:55Z
+User: decodekult
+User URL: https://github.com/decodekult
+----------------------------------------------------------------------
+ID: 1965206109
+Title: Add/jetpack jwt library
+URL: https://github.com/woocommerce/woocommerce/pull/41059
+Created at: 2023-10-27T10:16:12Z
+Updated at: 2023-11-15T00:01:22Z
+User: tommyshellberg
+User URL: https://github.com/tommyshellberg
+----------------------------------------------------------------------
+ID: 1962984943
+Title: $item_name filtering @ order admin items table
+URL: https://github.com/woocommerce/woocommerce/pull/41041
+Created at: 2023-10-26T08:27:48Z
+Updated at: 2024-01-04T08:15:41Z
+User: BusinessBloomer
+User URL: https://github.com/BusinessBloomer
+----------------------------------------------------------------------
+ID: 1961913969
+Title: E2e/playwright tests en es ar temp
+URL: https://github.com/woocommerce/woocommerce/pull/41004
+Created at: 2023-10-25T17:37:34Z
+Updated at: 2023-10-27T16:54:21Z
+User: nigeljamesstevenson
+User URL: https://github.com/nigeljamesstevenson
+----------------------------------------------------------------------
+ID: 1961639846
+Title: Fix coupon codes containing apostrophes
+URL: https://github.com/woocommerce/woocommerce/pull/40998
+Created at: 2023-10-25T15:01:29Z
+Updated at: 2024-01-25T14:54:38Z
+User: mikejolley
+User URL: https://github.com/mikejolley
+----------------------------------------------------------------------
+ID: 1954185173
+Title: Fix typos.
+URL: https://github.com/woocommerce/woocommerce/pull/40899
+Created at: 2023-10-20T12:25:29Z
+Updated at: 2024-01-22T04:00:00Z
+User: Maikuolan
+User URL: https://github.com/Maikuolan
+----------------------------------------------------------------------
+ID: 1952632757
+Title: Address possible performance regression with new defer strategy
+URL: https://github.com/woocommerce/woocommerce/pull/40877
+Created at: 2023-10-19T16:17:39Z
+Updated at: 2023-10-26T22:56:14Z
+User: adamsilverstein
+User URL: https://github.com/adamsilverstein
+----------------------------------------------------------------------
+ID: 1949904738
+Title: Fire action if order line item has been restored
+URL: https://github.com/woocommerce/woocommerce/pull/40848
+Created at: 2023-10-18T14:30:58Z
+Updated at: 2023-11-29T14:53:03Z
+User: danielvonmitschke
+User URL: https://github.com/danielvonmitschke
+----------------------------------------------------------------------
+ID: 1945757812
+Title: Wc 8.2.0 static analysis fixes
+URL: https://github.com/woocommerce/woocommerce/pull/40801
+Created at: 2023-10-16T17:39:01Z
+Updated at: 2023-10-16T18:29:31Z
+User: prettyboymp
+User URL: https://github.com/prettyboymp
+----------------------------------------------------------------------
+ID: 1945140831
+Title: [PoC] Create a dialog block
+URL: https://github.com/woocommerce/woocommerce/pull/40792
+Created at: 2023-10-16T12:46:57Z
+Updated at: 2023-10-17T05:42:44Z
+User: mdperez86
+User URL: https://github.com/mdperez86
+----------------------------------------------------------------------
+ID: 1943217620
+Title: Add new 2019 Algerian states
+URL: https://github.com/woocommerce/woocommerce/pull/40787
+Created at: 2023-10-14T11:49:22Z
+Updated at: 2024-01-10T14:35:27Z
+User: senadir
+User URL: https://github.com/senadir
+----------------------------------------------------------------------
+ID: 1942571093
+Title: Add package and composer dependencies
+URL: https://github.com/woocommerce/woocommerce/pull/40784
+Created at: 2023-10-13T20:09:15Z
+Updated at: 2023-12-11T15:59:26Z
+User: louwie17
+User URL: https://github.com/louwie17
+----------------------------------------------------------------------
+ID: 1942011648
+Title: WIP: Image replacement
+URL: https://github.com/woocommerce/woocommerce/pull/40760
+Created at: 2023-10-13T13:52:58Z
+Updated at: 2023-10-13T14:24:52Z
+User: artpi
+User URL: https://github.com/artpi
+----------------------------------------------------------------------
+ID: 1941604989
+Title: Add override loop template code snippet
+URL: https://github.com/woocommerce/woocommerce/pull/40750
+Created at: 2023-10-13T09:37:18Z
+Updated at: 2023-10-16T04:09:25Z
+User: nielslange
+User URL: https://github.com/nielslange
+----------------------------------------------------------------------
+ID: 1940555285
+Title: Add woocommerce_widget_layered_nav_term_anchor_text filter
+URL: https://github.com/woocommerce/woocommerce/pull/40734
+Created at: 2023-10-12T18:26:08Z
+Updated at: 2023-10-12T18:27:00Z
+User: moory-se
+User URL: https://github.com/moory-se
+----------------------------------------------------------------------
+ID: 1938707716
+Title: Use async loading strategy for woo-tracks script
+URL: https://github.com/woocommerce/woocommerce/pull/40721
+Created at: 2023-10-11T20:50:14Z
+Updated at: 2023-10-12T16:27:46Z
+User: westonruter
+User URL: https://github.com/westonruter
+----------------------------------------------------------------------
+ID: 1935947438
+Title: Add multiple images to a product variation
+URL: https://github.com/woocommerce/woocommerce/pull/40676
+Created at: 2023-10-10T18:19:29Z
+Updated at: 2023-10-11T12:13:31Z
+User: mdperez86
+User URL: https://github.com/mdperez86
+----------------------------------------------------------------------
+ID: 1929560005
+Title: Replace the Legacy REST API with a stub that always returns an error
+URL: https://github.com/woocommerce/woocommerce/pull/40627
+Created at: 2023-10-06T07:01:31Z
+Updated at: 2023-12-12T08:47:04Z
+User: Konamiman
+User URL: https://github.com/Konamiman
+----------------------------------------------------------------------
+ID: 1927745867
+Title: Added default stock amount filter and function
+URL: https://github.com/woocommerce/woocommerce/pull/40614
+Created at: 2023-10-05T08:56:13Z
+Updated at: 2023-10-13T17:04:05Z
+User: mi5t4n
+User URL: https://github.com/mi5t4n
+----------------------------------------------------------------------
+ID: 1924713399
+Title: Bump postcss from 8.4.12 to 8.4.31
+URL: https://github.com/woocommerce/woocommerce/pull/40574
+Created at: 2023-10-03T18:38:27Z
+Updated at: 2023-11-06T19:38:59Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 1917717982
+Title: updateFragments performance issue fix
+URL: https://github.com/woocommerce/woocommerce/pull/40491
+Created at: 2023-09-28T14:50:42Z
+Updated at: 2023-09-28T14:53:19Z
+User: wayheming
+User URL: https://github.com/wayheming
+----------------------------------------------------------------------
+ID: 1911529946
+Title: fix fatal string to array conversion error in get_full_size_image_dim…
+URL: https://github.com/woocommerce/woocommerce/pull/40395
+Created at: 2023-09-25T13:35:44Z
+Updated at: 2023-09-25T16:41:33Z
+User: ericmulder
+User URL: https://github.com/ericmulder
+----------------------------------------------------------------------
+ID: 1908499894
+Title: [PoC] Entity snapshots engine
+URL: https://github.com/woocommerce/woocommerce/pull/40365
+Created at: 2023-09-22T09:07:32Z
+Updated at: 2023-09-22T12:02:55Z
+User: Konamiman
+User URL: https://github.com/Konamiman
+----------------------------------------------------------------------
+ID: 1907558831
+Title: Bump graphql from 16.6.0 to 16.8.1
+URL: https://github.com/woocommerce/woocommerce/pull/40357
+Created at: 2023-09-21T18:41:35Z
+Updated at: 2023-10-26T22:16:36Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 1901429033
+Title: Check for empty value in get_order_id_by_order_key()
+URL: https://github.com/woocommerce/woocommerce/pull/40254
+Created at: 2023-09-18T17:32:04Z
+Updated at: 2023-09-19T14:37:49Z
+User: masteradhoc
+User URL: https://github.com/masteradhoc
+----------------------------------------------------------------------
+ID: 1900588497
+Title: Replace pink with WooCommerce purple in reports and ratings
+URL: https://github.com/woocommerce/woocommerce/pull/40243
+Created at: 2023-09-18T10:04:04Z
+Updated at: 2023-11-07T15:43:13Z
+User: Mayisha
+User URL: https://github.com/Mayisha
+----------------------------------------------------------------------
+ID: 1897053799
+Title: Try: Share blocks across templates
+URL: https://github.com/woocommerce/woocommerce/pull/40179
+Created at: 2023-09-14T17:58:26Z
+Updated at: 2023-09-14T18:36:51Z
+User: joshuatf
+User URL: https://github.com/joshuatf
+----------------------------------------------------------------------
+ID: 1890040882
+Title: Fix breadcrumb back icon color to follow the admin theme color
+URL: https://github.com/woocommerce/woocommerce/pull/40106
+Created at: 2023-09-11T09:12:23Z
+Updated at: 2023-09-18T08:53:24Z
+User: Mayisha
+User URL: https://github.com/Mayisha
+----------------------------------------------------------------------
+ID: 1888131799
+Title: [E2E test coverage]: Create variable product
+URL: https://github.com/woocommerce/woocommerce/pull/40095
+Created at: 2023-09-08T18:19:58Z
+Updated at: 2023-09-25T13:03:16Z
+User: octaedro
+User URL: https://github.com/octaedro
+----------------------------------------------------------------------
+ID: 1886571126
+Title: POC: Add contextual block and block component wrapper
+URL: https://github.com/woocommerce/woocommerce/pull/40077
+Created at: 2023-09-07T21:13:37Z
+Updated at: 2023-09-12T04:39:25Z
+User: joshuatf
+User URL: https://github.com/joshuatf
+----------------------------------------------------------------------
+ID: 1881507964
+Title: Remove duplicate entries from changelog.txt
+URL: https://github.com/woocommerce/woocommerce/pull/40038
+Created at: 2023-09-05T08:48:25Z
+Updated at: 2023-09-05T08:48:51Z
+User: chesio
+User URL: https://github.com/chesio
+----------------------------------------------------------------------
+ID: 1880770888
+Title: Make `Link type="external"` use `@worpress/components.ExternalLink`
+URL: https://github.com/woocommerce/woocommerce/pull/40025
+Created at: 2023-09-04T19:18:04Z
+Updated at: 2024-02-01T05:22:33Z
+User: tomalec
+User URL: https://github.com/tomalec
+----------------------------------------------------------------------
+ID: 1877327265
+Title: [Do Not Merge] Jetpack Sync Spike
+URL: https://github.com/woocommerce/woocommerce/pull/40002
+Created at: 2023-09-01T12:22:03Z
+Updated at: 2024-01-12T03:26:27Z
+User: adrianduffell
+User URL: https://github.com/adrianduffell
+----------------------------------------------------------------------
+ID: 1874413481
+Title: Bump webpack from 5.70.0 to 5.76.0
+URL: https://github.com/woocommerce/woocommerce/pull/39978
+Created at: 2023-08-30T21:45:54Z
+Updated at: 2023-10-09T14:38:37Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 1874413189
+Title: Bump simple-git from 3.14.0 to 3.16.0
+URL: https://github.com/woocommerce/woocommerce/pull/39977
+Created at: 2023-08-30T21:45:38Z
+Updated at: 2023-10-05T12:35:54Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 1873918850
+Title: Update readme.md
+URL: https://github.com/woocommerce/woocommerce/pull/39965
+Created at: 2023-08-30T15:30:26Z
+Updated at: 2023-08-30T16:09:35Z
+User: divydovy
+User URL: https://github.com/divydovy
+----------------------------------------------------------------------
+ID: 1870552406
+Title: POC: Add plugin integration scripts
+URL: https://github.com/woocommerce/woocommerce/pull/39941
+Created at: 2023-08-28T21:44:43Z
+Updated at: 2023-09-15T12:17:04Z
+User: joshuatf
+User URL: https://github.com/joshuatf
+----------------------------------------------------------------------
+ID: 1867931394
+Title: Docs: Fix Typos & Grammatical Errors #37502
+URL: https://github.com/woocommerce/woocommerce/pull/39924
+Created at: 2023-08-26T06:17:57Z
+Updated at: 2023-11-10T12:28:42Z
+User: devbijay
+User URL: https://github.com/devbijay
+----------------------------------------------------------------------
+ID: 1863319623
+Title: Only run cherry-pick tool when base-ref is trunk
+URL: https://github.com/woocommerce/woocommerce/pull/39867
+Created at: 2023-08-23T13:16:30Z
+Updated at: 2023-08-23T13:43:43Z
+User: jonathansadowski
+User URL: https://github.com/jonathansadowski
+----------------------------------------------------------------------
+ID: 1861782648
+Title: Use ternary instead of null coalescing operator to prevent PHP 8.1 deprecation notice
+URL: https://github.com/woocommerce/woocommerce/pull/39852
+Created at: 2023-08-22T16:12:41Z
+Updated at: 2023-11-08T20:05:03Z
+User: markjaquith
+User URL: https://github.com/markjaquith
+----------------------------------------------------------------------
+ID: 1842714805
+Title: Update/default payments gateways recommendations
+URL: https://github.com/woocommerce/woocommerce/pull/39635
+Created at: 2023-08-09T08:09:21Z
+Updated at: 2023-09-07T08:25:56Z
+User: vladolaru
+User URL: https://github.com/vladolaru
+----------------------------------------------------------------------
+ID: 1838294898
+Title: Ensure menu order does not have duplicated WC-related items
+URL: https://github.com/woocommerce/woocommerce/pull/39601
+Created at: 2023-08-06T18:08:10Z
+Updated at: 2023-08-22T19:14:44Z
+User: mariovalney
+User URL: https://github.com/mariovalney
+----------------------------------------------------------------------
+ID: 1824842734
+Title: Try: Allow conditional blocks to match context properties
+URL: https://github.com/woocommerce/woocommerce/pull/39461
+Created at: 2023-07-27T17:15:36Z
+Updated at: 2023-09-12T09:36:32Z
+User: joshuatf
+User URL: https://github.com/joshuatf
+----------------------------------------------------------------------
+ID: 1819875896
+Title: Fix sprintf for updated linked orders message
+URL: https://github.com/woocommerce/woocommerce/pull/39401
+Created at: 2023-07-25T09:07:23Z
+Updated at: 2023-10-02T15:46:42Z
+User: areklam
+User URL: https://github.com/areklam
+----------------------------------------------------------------------
+ID: 1818343586
+Title: Try to create table and set option when changing sync setting.
+URL: https://github.com/woocommerce/woocommerce/pull/39379
+Created at: 2023-07-24T12:37:54Z
+Updated at: 2023-07-24T13:06:40Z
+User: vedanshujain
+User URL: https://github.com/vedanshujain
+----------------------------------------------------------------------
+ID: 1812680018
+Title: Add utility for getting versions for a given date
+URL: https://github.com/woocommerce/woocommerce/pull/39326
+Created at: 2023-07-19T20:26:56Z
+Updated at: 2023-07-20T07:26:19Z
+User: jonathansadowski
+User URL: https://github.com/jonathansadowski
+----------------------------------------------------------------------
+ID: 1811958479
+Title: Handle experiment tests using transient-based api
+URL: https://github.com/woocommerce/woocommerce/pull/39312
+Created at: 2023-07-19T13:31:01Z
+Updated at: 2023-08-01T08:13:25Z
+User: xristos3490
+User URL: https://github.com/xristos3490
+----------------------------------------------------------------------
+ID: 1808709084
+Title: Fix invalid typehints and remove unnecessary reference and cast
+URL: https://github.com/woocommerce/woocommerce/pull/39284
+Created at: 2023-07-17T22:17:23Z
+Updated at: 2023-09-26T03:11:57Z
+User: Tofandel
+User URL: https://github.com/Tofandel
+----------------------------------------------------------------------
+ID: 1800790753
+Title: [Woo AI] - Improve Description Generation with Product Title + Keyword guess
+URL: https://github.com/woocommerce/woocommerce/pull/39200
+Created at: 2023-07-12T11:38:18Z
+Updated at: 2023-12-11T19:55:59Z
+User: tommyshellberg
+User URL: https://github.com/tommyshellberg
+----------------------------------------------------------------------
+ID: 1788242217
+Title: Fix analytics taxes list
+URL: https://github.com/woocommerce/woocommerce/pull/39091
+Created at: 2023-07-04T17:01:43Z
+Updated at: 2023-09-07T08:26:05Z
+User: octaedro
+User URL: https://github.com/octaedro
+----------------------------------------------------------------------
+ID: 1781234672
+Title: Add woocommerce_is_cart filter hook
+URL: https://github.com/woocommerce/woocommerce/pull/39029
+Created at: 2023-06-29T17:23:07Z
+Updated at: 2023-06-30T09:35:58Z
+User: SandroSNunes
+User URL: https://github.com/SandroSNunes
+----------------------------------------------------------------------
+ID: 1777187792
+Title: Add missing data-id for Terms field error on Checkout
+URL: https://github.com/woocommerce/woocommerce/pull/38968
+Created at: 2023-06-27T15:03:22Z
+Updated at: 2023-07-26T08:33:00Z
+User: vyskoczilova
+User URL: https://github.com/vyskoczilova
+----------------------------------------------------------------------
+ID: 1762392639
+Title: OBW: Recommend Jetpack CRM during onboarding
+URL: https://github.com/woocommerce/woocommerce/pull/38787
+Created at: 2023-06-18T17:38:51Z
+Updated at: 2023-11-28T20:22:11Z
+User: kallehauge
+User URL: https://github.com/kallehauge
+----------------------------------------------------------------------
+ID: 1756906038
+Title: [POC] Attribute-based REST API skeleton for WooCommerce
+URL: https://github.com/woocommerce/woocommerce/pull/38718
+Created at: 2023-06-14T13:24:33Z
+Updated at: 2023-09-07T15:22:07Z
+User: Konamiman
+User URL: https://github.com/Konamiman
+----------------------------------------------------------------------
+ID: 1740032663
+Title: Fix email report download link
+URL: https://github.com/woocommerce/woocommerce/pull/38600
+Created at: 2023-06-04T01:00:14Z
+Updated at: 2023-11-08T15:33:46Z
+User: Saggre
+User URL: https://github.com/Saggre
+----------------------------------------------------------------------
+ID: 1737179411
+Title: Orders: Changed modified date when a line item is changed
+URL: https://github.com/woocommerce/woocommerce/pull/38570
+Created at: 2023-06-01T22:21:39Z
+Updated at: 2023-06-23T22:34:54Z
+User: coreymckrill
+User URL: https://github.com/coreymckrill
+----------------------------------------------------------------------
+ID: 1728545845
+Title: Add `woocommerce_order_note_deleted` hook for a successful order note…
+URL: https://github.com/woocommerce/woocommerce/pull/38498
+Created at: 2023-05-27T08:37:50Z
+Updated at: 2024-01-09T12:01:18Z
+User: evokelektrique
+User URL: https://github.com/evokelektrique
+----------------------------------------------------------------------
+ID: 1725972391
+Title: Compatibilize HPOS order query arguments with non-HPOS
+URL: https://github.com/woocommerce/woocommerce/pull/38455
+Created at: 2023-05-25T14:45:14Z
+Updated at: 2023-05-30T23:22:16Z
+User: Konamiman
+User URL: https://github.com/Konamiman
+----------------------------------------------------------------------
+ID: 1720021070
+Title: E2e/playwright tests en es ar
+URL: https://github.com/woocommerce/woocommerce/pull/38400
+Created at: 2023-05-22T16:22:18Z
+Updated at: 2023-12-28T00:54:16Z
+User: nigeljamesstevenson
+User URL: https://github.com/nigeljamesstevenson
+----------------------------------------------------------------------
+ID: 1717491275
+Title: Update experimental select control to use dropdown hooks and improve extensibility
+URL: https://github.com/woocommerce/woocommerce/pull/38364
+Created at: 2023-05-19T16:10:24Z
+Updated at: 2023-12-19T21:39:57Z
+User: joshuatf
+User URL: https://github.com/joshuatf
+----------------------------------------------------------------------
+ID: 1716015288
+Title: Refactor product variation ajax calls
+URL: https://github.com/woocommerce/woocommerce/pull/38352
+Created at: 2023-05-18T17:40:53Z
+Updated at: 2023-05-23T13:53:55Z
+User: octaedro
+User URL: https://github.com/octaedro
+----------------------------------------------------------------------
+ID: 1713178780
+Title: Update route on product publish
+URL: https://github.com/woocommerce/woocommerce/pull/38330
+Created at: 2023-05-17T06:00:10Z
+Updated at: 2023-05-17T06:00:29Z
+User: kshojib
+User URL: https://github.com/kshojib
+----------------------------------------------------------------------
+ID: 1709482753
+Title: Add compatibility with CPT's search result filters in HPOS.
+URL: https://github.com/woocommerce/woocommerce/pull/38291
+Created at: 2023-05-15T07:25:40Z
+Updated at: 2023-09-07T08:26:11Z
+User: vedanshujain
+User URL: https://github.com/vedanshujain
+----------------------------------------------------------------------
+ID: 1703779807
+Title: Fix Admin\API\Reports\Customers\DataStore::anonymize_customer tries t…
+URL: https://github.com/woocommerce/woocommerce/pull/38201
+Created at: 2023-05-10T12:05:36Z
+Updated at: 2023-05-30T20:58:35Z
+User: georgejipa
+User URL: https://github.com/georgejipa
+----------------------------------------------------------------------
+ID: 1703507522
+Title: Remove Storefront Placement & Fix RIN title
+URL: https://github.com/woocommerce/woocommerce/pull/38198
+Created at: 2023-05-10T09:34:37Z
+Updated at: 2023-12-17T10:39:43Z
+User: corsonr
+User URL: https://github.com/corsonr
+----------------------------------------------------------------------
+ID: 1698826963
+Title: Fixed null in the part that gets the element of the custom post of th…
+URL: https://github.com/woocommerce/woocommerce/pull/38152
+Created at: 2023-05-07T00:19:44Z
+Updated at: 2023-05-08T05:12:49Z
+User: shoheitanaka
+User URL: https://github.com/shoheitanaka
+----------------------------------------------------------------------
+ID: 1697686639
+Title: Added filter allowing for the admin order screen product link to be changed
+URL: https://github.com/woocommerce/woocommerce/pull/38141
+Created at: 2023-05-05T14:08:05Z
+Updated at: 2023-06-01T09:12:47Z
+User: paulwilde
+User URL: https://github.com/paulwilde
+----------------------------------------------------------------------
+ID: 1690131937
+Title: Add Kosovo states to states.php
+URL: https://github.com/woocommerce/woocommerce/pull/38060
+Created at: 2023-04-30T23:33:46Z
+Updated at: 2023-10-09T10:01:51Z
+User: shpetimaliu
+User URL: https://github.com/shpetimaliu
+----------------------------------------------------------------------
+ID: 1690131010
+Title: Update phone.php
+URL: https://github.com/woocommerce/woocommerce/pull/38059
+Created at: 2023-04-30T23:30:50Z
+Updated at: 2023-05-03T19:13:10Z
+User: shpetimaliu
+User URL: https://github.com/shpetimaliu
+----------------------------------------------------------------------
+ID: 1688473810
+Title: Fix/orders table query
+URL: https://github.com/woocommerce/woocommerce/pull/38042
+Created at: 2023-04-28T12:30:53Z
+Updated at: 2023-04-28T12:55:19Z
+User: tommyshellberg
+User URL: https://github.com/tommyshellberg
+----------------------------------------------------------------------
+ID: 1686744164
+Title: cart : min_quantity : apply filter
+URL: https://github.com/woocommerce/woocommerce/pull/38025
+Created at: 2023-04-27T12:26:06Z
+Updated at: 2023-09-26T03:14:23Z
+User: codeway
+User URL: https://github.com/codeway
+----------------------------------------------------------------------
+ID: 1684589832
+Title: Reference taxanomy in woocommerce_layered_nav_default_query_type filter
+URL: https://github.com/woocommerce/woocommerce/pull/37997
+Created at: 2023-04-26T09:03:27Z
+Updated at: 2023-04-26T09:03:27Z
+User: smazur
+User URL: https://github.com/smazur
+----------------------------------------------------------------------
+ID: 1682109168
+Title: Fix search order by customer billing phone or shipping phone
+URL: https://github.com/woocommerce/woocommerce/pull/37966
+Created at: 2023-04-24T22:04:57Z
+Updated at: 2023-04-24T22:40:44Z
+User: mdperez86
+User URL: https://github.com/mdperez86
+----------------------------------------------------------------------
+ID: 1674895942
+Title: Add pattern for thousand and decimal separator in Woo settings
+URL: https://github.com/woocommerce/woocommerce/pull/37838
+Created at: 2023-04-19T13:22:22Z
+Updated at: 2023-05-15T11:55:12Z
+User: wputasic
+User URL: https://github.com/wputasic
+----------------------------------------------------------------------
+ID: 1657896649
+Title: Add placeholder support to code analyzer scan
+URL: https://github.com/woocommerce/woocommerce/pull/37608
+Created at: 2023-04-06T18:53:12Z
+Updated at: 2023-09-12T17:00:57Z
+User: jonathansadowski
+User URL: https://github.com/jonathansadowski
+----------------------------------------------------------------------
+ID: 1654907957
+Title: Fixed issue of Backtrace for error Uncaught TypeError: Unsupported op…
+URL: https://github.com/woocommerce/woocommerce/pull/37571
+Created at: 2023-04-05T04:17:30Z
+Updated at: 2023-09-05T17:01:16Z
+User: nikhiltechahead
+User URL: https://github.com/nikhiltechahead
+----------------------------------------------------------------------
+ID: 1652414578
+Title: Fix WC_Coupon set_status function @since version
+URL: https://github.com/woocommerce/woocommerce/pull/37557
+Created at: 2023-04-03T16:43:41Z
+Updated at: 2023-04-07T13:26:19Z
+User: nicomollet
+User URL: https://github.com/nicomollet
+----------------------------------------------------------------------
+ID: 1648584916
+Title: REST API: Retrieve downloads from order
+URL: https://github.com/woocommerce/woocommerce/pull/37530
+Created at: 2023-03-31T02:51:13Z
+Updated at: 2023-04-05T01:03:21Z
+User: jgreys
+User URL: https://github.com/jgreys
+----------------------------------------------------------------------
+ID: 1647982868
+Title: Improve accessibility of System Status screen
+URL: https://github.com/woocommerce/woocommerce/pull/37524
+Created at: 2023-03-30T16:57:10Z
+Updated at: 2023-03-31T22:26:07Z
+User: jorgeatorres
+User URL: https://github.com/jorgeatorres
+----------------------------------------------------------------------
+ID: 1644503931
+Title: Ensure install procedure only runs once
+URL: https://github.com/woocommerce/woocommerce/pull/37480
+Created at: 2023-03-28T18:57:24Z
+Updated at: 2023-05-29T10:33:42Z
+User: peterfabian
+User URL: https://github.com/peterfabian
+----------------------------------------------------------------------
+ID: 1643873797
+Title: Queue cron job update for later after the install process.
+URL: https://github.com/woocommerce/woocommerce/pull/37474
+Created at: 2023-03-28T12:44:46Z
+Updated at: 2023-03-28T21:24:53Z
+User: peterfabian
+User URL: https://github.com/peterfabian
+----------------------------------------------------------------------
+ID: 1643823912
+Title: Warm up caches for options during install procedure.
+URL: https://github.com/woocommerce/woocommerce/pull/37473
+Created at: 2023-03-28T12:15:30Z
+Updated at: 2023-03-28T21:25:26Z
+User: peterfabian
+User URL: https://github.com/peterfabian
+----------------------------------------------------------------------
+ID: 1642116130
+Title: Scroll to login form on 'Click here to login' error in checkout.
+URL: https://github.com/woocommerce/woocommerce/pull/37447
+Created at: 2023-03-27T13:50:44Z
+Updated at: 2023-03-27T14:23:12Z
+User: peterfabian
+User URL: https://github.com/peterfabian
+----------------------------------------------------------------------
+ID: 1639858427
+Title: Trigger ajax add to cart JS event in case of response error
+URL: https://github.com/woocommerce/woocommerce/pull/37435
+Created at: 2023-03-24T18:30:11Z
+Updated at: 2023-05-31T18:47:07Z
+User: maaprote
+User URL: https://github.com/maaprote
+----------------------------------------------------------------------
+ID: 1638711062
+Title: New - Implement remove_coupon method in WC_Order
+URL: https://github.com/woocommerce/woocommerce/pull/37415
+Created at: 2023-03-24T04:45:55Z
+Updated at: 2023-04-28T02:24:20Z
+User: jgreys
+User URL: https://github.com/jgreys
+----------------------------------------------------------------------
+ID: 1629934793
+Title: Move nbsp inside the woocommerce_cart_item_name filter
+URL: https://github.com/woocommerce/woocommerce/pull/37303
+Created at: 2023-03-17T21:13:51Z
+Updated at: 2023-03-21T21:39:59Z
+User: jamesckemp
+User URL: https://github.com/jamesckemp
+----------------------------------------------------------------------
+ID: 1611537218
+Title: Notify betadownload only when secret is available
+URL: https://github.com/woocommerce/woocommerce/pull/37080
+Created at: 2023-03-06T14:21:59Z
+Updated at: 2023-09-12T17:00:53Z
+User: szepeviktor
+User URL: https://github.com/szepeviktor
+----------------------------------------------------------------------
+ID: 1608659736
+Title: Fix reference to WC_API_Server
+URL: https://github.com/woocommerce/woocommerce/pull/37054
+Created at: 2023-03-03T13:39:48Z
+Updated at: 2023-03-17T08:15:59Z
+User: szepeviktor
+User URL: https://github.com/szepeviktor
+----------------------------------------------------------------------
+ID: 1604061113
+Title: Improve order email layouts (responsive and mobile email clients)
+URL: https://github.com/woocommerce/woocommerce/pull/37011
+Created at: 2023-03-01T01:21:21Z
+Updated at: 2023-08-03T14:17:34Z
+User: barryhughes
+User URL: https://github.com/barryhughes
+----------------------------------------------------------------------
+ID: 1586105850
+Title: Prevent stores from calling helper API when local cache is not functioning
+URL: https://github.com/woocommerce/woocommerce/pull/36846
+Created at: 2023-02-15T15:59:04Z
+Updated at: 2023-09-26T05:23:38Z
+User: thilinah
+User URL: https://github.com/thilinah
+----------------------------------------------------------------------
+ID: 1560549801
+Title: Include Kosovo (XK) in countries, states and continents
+URL: https://github.com/woocommerce/woocommerce/pull/36662
+Created at: 2023-01-27T23:11:56Z
+Updated at: 2023-10-09T10:00:42Z
+User: IliaDi
+User URL: https://github.com/IliaDi
+----------------------------------------------------------------------
+ID: 1533322542
+Title: fix issue 36095 missing array key
+URL: https://github.com/woocommerce/woocommerce/pull/36437
+Created at: 2023-01-14T16:01:28Z
+Updated at: 2023-09-26T03:16:54Z
+User: EdithAllison
+User URL: https://github.com/EdithAllison
+----------------------------------------------------------------------
+ID: 1532858223
+Title: Add check to line item refund quantity
+URL: https://github.com/woocommerce/woocommerce/pull/36429
+Created at: 2023-01-13T20:15:21Z
+Updated at: 2023-11-10T00:04:47Z
+User: leonardola
+User URL: https://github.com/leonardola
+----------------------------------------------------------------------
+ID: 1519623359
+Title: Improve accessibility of various navigation elements
+URL: https://github.com/woocommerce/woocommerce/pull/36300
+Created at: 2023-01-04T21:50:22Z
+Updated at: 2023-05-04T08:09:40Z
+User: IanDelMar
+User URL: https://github.com/IanDelMar
+----------------------------------------------------------------------
+ID: 1430609804
+Title: Remove `qs` dependency from `/navigation`
+URL: https://github.com/woocommerce/woocommerce/pull/35444
+Created at: 2022-10-31T23:07:56Z
+Updated at: 2023-05-09T19:03:27Z
+User: tomalec
+User URL: https://github.com/tomalec
+----------------------------------------------------------------------
+ID: 1423262604
+Title: issue-35238 - fixing issue with getting mysql version when using mariadb
+URL: https://github.com/woocommerce/woocommerce/pull/35324
+Created at: 2022-10-26T00:27:20Z
+Updated at: 2023-09-26T21:40:16Z
+User: domSBM
+User URL: https://github.com/domSBM
+----------------------------------------------------------------------
+ID: 1406779022
+Title: Remove abuse of wp_count_posts and use efficient SQL queries instead. Large WooCommerce customers are suffering because of this code.
+URL: https://github.com/woocommerce/woocommerce/pull/35061
+Created at: 2022-10-12T20:35:32Z
+Updated at: 2023-09-07T08:26:14Z
+User: dhilditch
+User URL: https://github.com/dhilditch
+----------------------------------------------------------------------
+ID: 1406339495
+Title: first pass at applying button styling to generic button elements with…
+URL: https://github.com/woocommerce/woocommerce/pull/35055
+Created at: 2022-10-12T14:42:32Z
+Updated at: 2023-01-27T12:30:25Z
+User: helgatheviking
+User URL: https://github.com/helgatheviking
+----------------------------------------------------------------------
+ID: 1377750086
+Title: Filter WC_Shipping::shipping_methods
+URL: https://github.com/woocommerce/woocommerce/pull/34729
+Created at: 2022-09-19T10:38:09Z
+Updated at: 2023-05-03T02:38:36Z
+User: senadir
+User URL: https://github.com/senadir
+----------------------------------------------------------------------
+ID: 1374466971
+Title: Build for COT testing
+URL: https://github.com/woocommerce/woocommerce/pull/34693
+Created at: 2022-09-15T12:39:57Z
+Updated at: 2023-09-12T17:00:51Z
+User: vedanshujain
+User URL: https://github.com/vedanshujain
+----------------------------------------------------------------------
+ID: 1374418202
+Title: fixed the inbox image issue
+URL: https://github.com/woocommerce/woocommerce/pull/34691
+Created at: 2022-09-15T12:02:07Z
+Updated at: 2023-05-05T16:41:21Z
+User: aezazs-multidots
+User URL: https://github.com/aezazs-multidots
+----------------------------------------------------------------------
+ID: 1370548513
+Title: Update csv-export package documentation
+URL: https://github.com/woocommerce/woocommerce/pull/34647
+Created at: 2022-09-12T21:39:23Z
+Updated at: 2022-10-12T03:03:56Z
+User: Saggre
+User URL: https://github.com/Saggre
+----------------------------------------------------------------------
+ID: 1370524014
+Title: Change csv export saveAs implementation library
+URL: https://github.com/woocommerce/woocommerce/pull/34646
+Created at: 2022-09-12T21:13:54Z
+Updated at: 2023-05-03T18:25:25Z
+User: Saggre
+User URL: https://github.com/Saggre
+----------------------------------------------------------------------
+ID: 1345610198
+Title: Fix #32961 (Corrected the issue of memory limit when server configuration on -1)
+URL: https://github.com/woocommerce/woocommerce/pull/34409
+Created at: 2022-08-21T22:18:49Z
+Updated at: 2023-10-09T10:55:26Z
+User: daniyalahmadk
+User URL: https://github.com/daniyalahmadk
+----------------------------------------------------------------------
+ID: 1345598729
+Title: Fix - #33503 (Added the ability to search currencies by using ISO codes)
+URL: https://github.com/woocommerce/woocommerce/pull/34408
+Created at: 2022-08-21T21:23:22Z
+Updated at: 2023-09-30T13:54:39Z
+User: daniyalahmadk
+User URL: https://github.com/daniyalahmadk
+----------------------------------------------------------------------
+ID: 1329653487
+Title: Skip thumbnail regeneration when Photon Image CDN handles it externally.
+URL: https://github.com/woocommerce/woocommerce/pull/34205
+Created at: 2022-08-05T08:57:19Z
+Updated at: 2023-11-03T00:34:07Z
+User: peterfabian
+User URL: https://github.com/peterfabian
+----------------------------------------------------------------------
+ID: 1327211037
+Title: Fixed categories thumb column overlap with categories name
+URL: https://github.com/woocommerce/woocommerce/pull/34170
+Created at: 2022-08-03T13:21:44Z
+Updated at: 2023-11-03T00:34:05Z
+User: theminaldiwan
+User URL: https://github.com/theminaldiwan
+----------------------------------------------------------------------
+ID: 1310892588
+Title: Update css for single product badge
+URL: https://github.com/woocommerce/woocommerce/pull/33995
+Created at: 2022-07-20T11:26:25Z
+Updated at: 2023-09-26T05:15:41Z
+User: theminaldiwan
+User URL: https://github.com/theminaldiwan
+----------------------------------------------------------------------
+ID: 1290414544
+Title: Add product archive header template and re-hook
+URL: https://github.com/woocommerce/woocommerce/pull/33681
+Created at: 2022-06-30T17:00:16Z
+Updated at: 2024-01-11T15:04:27Z
+User: tommyferry
+User URL: https://github.com/tommyferry
+----------------------------------------------------------------------
+ID: 1287468559
+Title: Filter reload_checkout when processing customer on submit order
+URL: https://github.com/woocommerce/woocommerce/pull/33639
+Created at: 2022-06-28T14:48:25Z
+Updated at: 2023-11-03T00:34:04Z
+User: jasonpierson
+User URL: https://github.com/jasonpierson
+----------------------------------------------------------------------
+ID: 1256359316
+Title: 27706 Allow Payment Method HTML
+URL: https://github.com/woocommerce/woocommerce/pull/33281
+Created at: 2022-06-01T15:57:56Z
+Updated at: 2023-11-02T00:34:10Z
+User: johnregan3
+User URL: https://github.com/johnregan3
+----------------------------------------------------------------------
+ID: 1194077605
+Title: Add/payment failed action hook
+URL: https://github.com/woocommerce/woocommerce/pull/32502
+Created at: 2022-04-06T05:54:43Z
+Updated at: 2023-11-02T00:34:08Z
+User: mzrahmani
+User URL: https://github.com/mzrahmani
+----------------------------------------------------------------------
+ID: 1188064938
+Title: Added filter for complete order email text customize
+URL: https://github.com/woocommerce/woocommerce/pull/32439
+Created at: 2022-03-31T13:16:48Z
+Updated at: 2023-12-18T12:03:24Z
+User: ajayghaghretiya-multidots
+User URL: https://github.com/ajayghaghretiya-multidots
+----------------------------------------------------------------------
+ID: 1127004197
+Title: Fix 31859 issue: Subtotal check uses the wrong subtotal in orders
+URL: https://github.com/woocommerce/woocommerce/pull/31861
+Created at: 2022-02-08T09:34:19Z
+Updated at: 2023-09-26T05:16:51Z
+User: leanzafrancesco
+User URL: https://github.com/leanzafrancesco
+----------------------------------------------------------------------
+ID: 1118021398
+Title: woocommerce_get_checkout_payment_url enhancement
+URL: https://github.com/woocommerce/woocommerce/pull/31759
+Created at: 2022-01-29T04:03:12Z
+Updated at: 2023-11-02T00:34:03Z
+User: erikdemarco
+User URL: https://github.com/erikdemarco
+----------------------------------------------------------------------
+ID: 1116486723
+Title: 31451 - Filter Out Disabled Attributes in Filter Products Widget
+URL: https://github.com/woocommerce/woocommerce/pull/31745
+Created at: 2022-01-27T16:28:57Z
+Updated at: 2023-11-02T17:11:13Z
+User: johnregan3
+User URL: https://github.com/johnregan3
+----------------------------------------------------------------------
+ID: 1107169505
+Title: Removes the star icon font
+URL: https://github.com/woocommerce/woocommerce/pull/31670
+Created at: 2022-01-18T17:19:50Z
+Updated at: 2023-12-11T09:24:39Z
+User: erikyo
+User URL: https://github.com/erikyo
+----------------------------------------------------------------------
+ID: 1087790678
+Title: prevent line breaks in plugin author names
+URL: https://github.com/woocommerce/woocommerce/pull/31503
+Created at: 2021-12-23T15:04:35Z
+Updated at: 2023-11-10T19:38:18Z
+User: Spreeuw
+User URL: https://github.com/Spreeuw
+----------------------------------------------------------------------
+ID: 1083084553
+Title: use variation name instead of parent for add to cart message for variations
+URL: https://github.com/woocommerce/woocommerce/pull/31472
+Created at: 2021-12-17T09:59:15Z
+Updated at: 2023-11-23T00:19:42Z
+User: ntindicator
+User URL: https://github.com/ntindicator
+----------------------------------------------------------------------
+ID: 1082573760
+Title: Fix Puerto Rico State Checkout Error
+URL: https://github.com/woocommerce/woocommerce/pull/31466
+Created at: 2021-12-16T19:32:05Z
+Updated at: 2023-11-02T00:34:01Z
+User: jaywilliams
+User URL: https://github.com/jaywilliams
+----------------------------------------------------------------------
+ID: 1082027000
+Title: Add a settings export/import tool
+URL: https://github.com/woocommerce/woocommerce/pull/31463
+Created at: 2021-12-16T10:34:00Z
+Updated at: 2023-11-02T00:34:00Z
+User: Konamiman
+User URL: https://github.com/Konamiman
+----------------------------------------------------------------------
+ID: 1048231453
+Title: Added support for custom checkbox fields used with 'address-i18n.js'
+URL: https://github.com/woocommerce/woocommerce/pull/31108
+Created at: 2021-11-09T06:18:17Z
+Updated at: 2024-01-10T10:16:51Z
+User: noknokcody
+User URL: https://github.com/noknokcody
+----------------------------------------------------------------------
+ID: 949358249
+Title: add new action woocommerce_after_mini_cart_item_name
+URL: https://github.com/woocommerce/woocommerce/pull/30324
+Created at: 2021-07-21T06:03:42Z
+Updated at: 2023-11-17T22:31:19Z
+User: alewolf
+User URL: https://github.com/alewolf
+----------------------------------------------------------------------
+ID: 532489203
+Title: Sort items for before applying discounts by the price property
+URL: https://github.com/woocommerce/woocommerce/pull/25165
+Created at: 2019-12-04T06:59:23Z
+Updated at: 2023-11-02T00:33:52Z
+User: james-allan
+User URL: https://github.com/james-allan
 ----------------------------------------------------------------------

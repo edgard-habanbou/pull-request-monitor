@@ -11,6 +11,7 @@ class PullRequestController extends Controller
     {
         // Check if we're about to hit the rate limit
         $remainingRequests = $response->getHeaderLine('X-RateLimit-Remaining');
+
         if ($remainingRequests == 0) {
             $resetTime = $response->getHeaderLine('X-RateLimit-Reset');
             $resetTimeInSeconds = $resetTime - time();
@@ -20,33 +21,44 @@ class PullRequestController extends Controller
 
     private function fetchPullRequests($parameter, $ownerName, $repoName)
     {
+        ini_set("max_execution_time", 3600);
         try {
-            // Fetch pull requests from GitHub
-            $client = new Client();
-            $response = $client->request('GET', 'https://api.github.com/search/issues?q=is:pr+is:open+repo:' . $ownerName . "/" . $repoName . $parameter, [
-                'headers' => [
-                    'Accept' => 'application/vnd.github+json',
-                    'Authorization' => 'Bearer ' . env('GITHUB_ACCESS_TOKEN'),
-                    'X-GitHub-Api-Version' => '2022-11-28'
-                ]
+            $pullRequests = [];
+            $page = 1;
+            $perPage = 50;
+
+            $client = new Client([
+                'timeout' => 500,
             ]);
+            do {
+                $response = $client->request('GET', 'https://api.github.com/search/issues?q=is:pr+is:open+repo:' . $ownerName . "/" . $repoName . $parameter . '&per_page=' . $perPage . '&page=' . $page, [
+                    'headers' => [
+                        'Accept' => 'application/vnd.github+json',
+                        'Authorization' => 'Bearer ' . env('GITHUB_ACCESS_TOKEN'),
+                        'X-GitHub-Api-Version' => '2022-11-28'
+                    ]
+                ]);
 
-            // Check if we're about to hit the rate limit
-            $this->checkRateLimit($response);
+                // Check if we're about to hit the rate limit
+                $this->checkRateLimit($response);
 
-            // If the request is successful, return the pull requests
-            if ($response->getStatusCode() == 200) {
-                $pullRequests = json_decode($response->getBody()->getContents(), true);
-                return $pullRequests["items"];
+                // If the request is successful, append pull requests to the array
+                if ($response->getStatusCode() == 200) {
+                    $responseData = json_decode($response->getBody()->getContents(), true);
+                    $pullRequests = array_merge($pullRequests, $responseData["items"]);
+                }
 
-                // If the request fails, return an empty array
-            } else {
-                return [];
-            }
+                $page++;
+
+                // Continue looping until there are no more pages
+            } while ($response->hasHeader('Link') && strpos($response->getHeader('Link')[0], 'rel="next"') !== false);
+
+            return $pullRequests;
         } catch (\GuzzleHttp\Exception\RequestException $e) {
             return [];
         }
     }
+
 
     public function Main($ownerName, $repoName)
     {
