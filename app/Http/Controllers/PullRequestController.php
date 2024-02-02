@@ -6,6 +6,18 @@ use GuzzleHttp\Client;
 
 class PullRequestController extends Controller
 {
+
+    private function checkRateLimit($response)
+    {
+        // Check if we're about to hit the rate limit
+        $remainingRequests = $response->getHeaderLine('X-RateLimit-Remaining');
+        if ($remainingRequests == 0) {
+            $resetTime = $response->getHeaderLine('X-RateLimit-Reset');
+            $resetTimeInSeconds = $resetTime - time();
+            sleep($resetTimeInSeconds); // Sleep until rate limit resets
+        }
+    }
+
     public function fetchPullRequests($parameter, $ownerName, $repoName)
     {
         try {
@@ -20,12 +32,7 @@ class PullRequestController extends Controller
             ]);
 
             // Check if we're about to hit the rate limit
-            $remainingRequests = $response->getHeaderLine('X-RateLimit-Remaining');
-            if ($remainingRequests == 0) {
-                $resetTime = $response->getHeaderLine('X-RateLimit-Reset');
-                $resetTimeInSeconds = $resetTime - time();
-                sleep($resetTimeInSeconds); // Sleep until rate limit resets
-            }
+            $this->checkRateLimit($response);
 
             // If the request is successful, return the pull requests
             if ($response->getStatusCode() == 200) {
