@@ -18,7 +18,7 @@ class PullRequestController extends Controller
         }
     }
 
-    public function fetchPullRequests($parameter, $ownerName, $repoName)
+    private function fetchPullRequests($parameter, $ownerName, $repoName)
     {
         try {
             // Fetch pull requests from GitHub
@@ -48,8 +48,6 @@ class PullRequestController extends Controller
         }
     }
 
-
-
     public function Main($ownerName, $repoName)
     {
         // Fetch pull requests that are older than two weeks
@@ -72,5 +70,12 @@ class PullRequestController extends Controller
             'pullRequestsWithReviewNone' => $pullRequestsWithReviewNone,
             'pullRequestsWithReviewSuccess' => $pullRequestsWithReviewSuccess
         ]);
+    }
+
+    public function writeToTxtFile($fileName, $data)
+    {
+        $file = fopen($fileName, "w");
+        fwrite($file, $data);
+        fclose($file);
     }
 }
