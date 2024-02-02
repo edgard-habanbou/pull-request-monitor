@@ -1,0 +1,240 @@
+ID: 2115227343
+Title: Simplify Customer history calculation
+URL: https://github.com/woocommerce/woocommerce/pull/44318
+Created at: 2024-02-02T15:50:17Z
+Updated at: 2024-02-02T15:57:48Z
+User: layoutd
+User URL: https://github.com/layoutd
+----------------------------------------------------------------------
+ID: 2115223770
+Title: Test e2e tests are skipped 
+URL: https://github.com/woocommerce/woocommerce/pull/44317
+Created at: 2024-02-02T15:48:11Z
+Updated at: 2024-02-02T15:53:17Z
+User: adimoldovan
+User URL: https://github.com/adimoldovan
+----------------------------------------------------------------------
+ID: 2115215197
+Title: Skip e2e tests if only docs are updated
+URL: https://github.com/woocommerce/woocommerce/pull/44316
+Created at: 2024-02-02T15:44:35Z
+Updated at: 2024-02-02T15:44:35Z
+User: adimoldovan
+User URL: https://github.com/adimoldovan
+----------------------------------------------------------------------
+ID: 2115124664
+Title: [Experimental] Add option to `show_in_order_confirmation` for additional checkout fields
+URL: https://github.com/woocommerce/woocommerce/pull/44314
+Created at: 2024-02-02T14:57:15Z
+Updated at: 2024-02-02T15:31:52Z
+User: mikejolley
+User URL: https://github.com/mikejolley
+----------------------------------------------------------------------
+ID: 2115029124
+Title: Add snapshot tracking for Checkout additional fields.
+URL: https://github.com/woocommerce/woocommerce/pull/44310
+Created at: 2024-02-02T14:10:03Z
+Updated at: 2024-02-02T14:49:37Z
+User: senadir
+User URL: https://github.com/senadir
+----------------------------------------------------------------------
+ID: 2114964711
+Title: CYS - Core: ensure that the the default font pair and color pair are selected
+URL: https://github.com/woocommerce/woocommerce/pull/44309
+Created at: 2024-02-02T13:44:18Z
+Updated at: 2024-02-02T15:46:02Z
+User: gigitux
+User URL: https://github.com/gigitux
+----------------------------------------------------------------------
+ID: 2114929039
+Title: Fix e2e tests required job being skipped on failures
+URL: https://github.com/woocommerce/woocommerce/pull/44308
+Created at: 2024-02-02T13:24:05Z
+Updated at: 2024-02-02T15:56:40Z
+User: adimoldovan
+User URL: https://github.com/adimoldovan
+----------------------------------------------------------------------
+ID: 2114718853
+Title: Add e2e tests for password-protected Single Product block template
+URL: https://github.com/woocommerce/woocommerce/pull/44304
+Created at: 2024-02-02T11:31:12Z
+Updated at: 2024-02-02T15:35:49Z
+User: Aljullu
+User URL: https://github.com/Aljullu
+----------------------------------------------------------------------
+ID: 2114448009
+Title: Order attribution should be disabled for new installs.
+URL: https://github.com/woocommerce/woocommerce/pull/44295
+Created at: 2024-02-02T09:07:48Z
+Updated at: 2024-02-02T09:43:21Z
+User: budzanowski
+User URL: https://github.com/budzanowski
+----------------------------------------------------------------------
+ID: 2114132642
+Title: Blocks E2E tests: Remove assertions from project setup files
+URL: https://github.com/woocommerce/woocommerce/pull/44290
+Created at: 2024-02-02T05:52:01Z
+Updated at: 2024-02-02T06:13:57Z
+User: samueljseay
+User URL: https://github.com/samueljseay
+----------------------------------------------------------------------
+ID: 2113897995
+Title: [ProductEditor] Try removing ProductTemplate
+URL: https://github.com/woocommerce/woocommerce/pull/44287
+Created at: 2024-02-02T02:23:54Z
+Updated at: 2024-02-02T15:48:55Z
+User: mattsherman
+User URL: https://github.com/mattsherman
+----------------------------------------------------------------------
+ID: 2113454656
+Title: Product Editor: Export recent SlotFills as __experimental
+URL: https://github.com/woocommerce/woocommerce/pull/44285
+Created at: 2024-02-01T20:49:44Z
+Updated at: 2024-02-01T21:36:16Z
+User: mattsherman
+User URL: https://github.com/mattsherman
+----------------------------------------------------------------------
+ID: 2113346521
+Title: [E2E] Robustify order confirmation assertions (checkout spec)
+URL: https://github.com/woocommerce/woocommerce/pull/44284
+Created at: 2024-02-01T19:51:20Z
+Updated at: 2024-02-01T23:14:09Z
+User: barryhughes
+User URL: https://github.com/barryhughes
+----------------------------------------------------------------------
+ID: 2113172626
+Title: Add `wc hpos backfill` tool to backfill from/to either datastore
+URL: https://github.com/woocommerce/woocommerce/pull/44281
+Created at: 2024-02-01T18:30:33Z
+Updated at: 2024-02-01T19:26:08Z
+User: jorgeatorres
+User URL: https://github.com/jorgeatorres
+----------------------------------------------------------------------
+ID: 2113096491
+Title: Remove the ability to update Woo.com extension not available in WP.org plugin directory
+URL: https://github.com/woocommerce/woocommerce/pull/44279
+Created at: 2024-02-01T17:53:44Z
+Updated at: 2024-02-01T20:44:56Z
+User: thilinah
+User URL: https://github.com/thilinah
+----------------------------------------------------------------------
+ID: 2112817403
+Title: [e2e tests] New tests for product edit in block editor
+URL: https://github.com/woocommerce/woocommerce/pull/44272
+Created at: 2024-02-01T15:38:29Z
+Updated at: 2024-02-02T16:00:00Z
+User: adimoldovan
+User URL: https://github.com/adimoldovan
+----------------------------------------------------------------------
+ID: 2112743457
+Title: Tests/tweak checkout verification test
+URL: https://github.com/woocommerce/woocommerce/pull/44266
+Created at: 2024-02-01T15:03:48Z
+Updated at: 2024-02-02T02:07:10Z
+User: barryhughes
+User URL: https://github.com/barryhughes
+----------------------------------------------------------------------
+ID: 2112650698
+Title: Update notice templates display logic to show updated templates in block themes only
+URL: https://github.com/woocommerce/woocommerce/pull/44263
+Created at: 2024-02-01T14:22:13Z
+Updated at: 2024-02-01T20:03:01Z
+User: opr
+User URL: https://github.com/opr
+----------------------------------------------------------------------
+ID: 2112169556
+Title: BlockTemplateUtils cleanup
+URL: https://github.com/woocommerce/woocommerce/pull/44256
+Created at: 2024-02-01T10:42:54Z
+Updated at: 2024-02-01T13:27:51Z
+User: Aljullu
+User URL: https://github.com/Aljullu
+----------------------------------------------------------------------
+ID: 2112099617
+Title: Add template title and description on 'get_block_template' hook
+URL: https://github.com/woocommerce/woocommerce/pull/44254
+Created at: 2024-02-01T10:14:53Z
+Updated at: 2024-02-01T12:35:44Z
+User: Aljullu
+User URL: https://github.com/Aljullu
+----------------------------------------------------------------------
+ID: 2110913888
+Title: POC - Add delivery estimate
+URL: https://github.com/woocommerce/woocommerce/pull/44238
+Created at: 2024-01-31T20:28:58Z
+Updated at: 2024-01-31T20:55:04Z
+User: tarunvijwani
+User URL: https://github.com/tarunvijwani
+----------------------------------------------------------------------
+ID: 2110679162
+Title: Product Gallery block: Enable keyboard navigation for thumbnails
+URL: https://github.com/woocommerce/woocommerce/pull/44236
+Created at: 2024-01-31T18:06:37Z
+Updated at: 2024-02-02T09:23:25Z
+User: thealexandrelara
+User URL: https://github.com/thealexandrelara
+----------------------------------------------------------------------
+ID: 2110582023
+Title: Added Missing Blocks Linting Change Trigger
+URL: https://github.com/woocommerce/woocommerce/pull/44233
+Created at: 2024-01-31T17:10:55Z
+Updated at: 2024-02-02T06:26:57Z
+User: ObliviousHarmony
+User URL: https://github.com/ObliviousHarmony
+----------------------------------------------------------------------
+ID: 2110374436
+Title: Ensure proper handling of product-related taxonomies in filtering logic
+URL: https://github.com/woocommerce/woocommerce/pull/44230
+Created at: 2024-01-31T15:31:41Z
+Updated at: 2024-02-02T14:45:43Z
+User: xristos3490
+User URL: https://github.com/xristos3490
+----------------------------------------------------------------------
+ID: 2110310651
+Title: Update combobox validation message to be more generic
+URL: https://github.com/woocommerce/woocommerce/pull/44229
+Created at: 2024-01-31T15:05:48Z
+Updated at: 2024-01-31T15:28:10Z
+User: mikejolley
+User URL: https://github.com/mikejolley
+----------------------------------------------------------------------
+ID: 2110020835
+Title: Introduce handleConfirm. Export handlePrompt & handleConfirm from product-editor
+URL: https://github.com/woocommerce/woocommerce/pull/44226
+Created at: 2024-01-31T12:46:28Z
+Updated at: 2024-01-31T12:46:46Z
+User: leewillis77
+User URL: https://github.com/leewillis77
+----------------------------------------------------------------------
+ID: 2109933552
+Title: Support testing many variants of a block at runtime via dynamically generated templates
+URL: https://github.com/woocommerce/woocommerce/pull/44223
+Created at: 2024-01-31T11:56:30Z
+Updated at: 2024-02-02T05:42:08Z
+User: samueljseay
+User URL: https://github.com/samueljseay
+----------------------------------------------------------------------
+ID: 2109929712
+Title: [Product Block Editor]: use Label component to render Textarea field block label
+URL: https://github.com/woocommerce/woocommerce/pull/44222
+Created at: 2024-01-31T11:54:13Z
+Updated at: 2024-01-31T12:19:39Z
+User: retrofox
+User URL: https://github.com/retrofox
+----------------------------------------------------------------------
+ID: 2109818420
+Title: Order attribution - avoid attributing AJAX-checkouts to Web Admin
+URL: https://github.com/woocommerce/woocommerce/pull/44219
+Created at: 2024-01-31T10:49:57Z
+Updated at: 2024-01-31T16:41:20Z
+User: layoutd
+User URL: https://github.com/layoutd
+----------------------------------------------------------------------
+ID: 2109796660
+Title: [WIP] BlockTemplatesController refactor/cleanup
+URL: https://github.com/woocommerce/woocommerce/pull/44218
+Created at: 2024-01-31T10:37:52Z
+Updated at: 2024-02-01T16:34:04Z
+User: Aljullu
+User URL: https://github.com/Aljullu
+----------------------------------------------------------------------

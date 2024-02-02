@@ -54,44 +54,50 @@ class PullRequestController extends Controller
         $twoWeeksAgo = date('Y-m-d', strtotime('-2 weeks'));
         $oldPullRequests = $this->fetchPullRequests("+created:<" . $twoWeeksAgo, $ownerName, $repoName);
         // Write the data to a file
-        $this->writeData("oldPullRequests.txt", $oldPullRequests);
+        $this->writeData("oldPullRequests.txt", $oldPullRequests, $ownerName, $repoName);
 
         // Fetch pull requests that require review
         $pullRequestsWithReviewRequired = $this->fetchPullRequests("+review:required", $ownerName, $repoName);
         // Write the data to a file
-        $this->writeData("pullRequestsWithReviewRequired.txt", $pullRequestsWithReviewRequired);
+        $this->writeData("pullRequestsWithReviewRequired.txt", $pullRequestsWithReviewRequired, $ownerName, $repoName);
 
         // Fetch pull requests where review status is none
         $pullRequestsWithReviewNone = $this->fetchPullRequests("+review:none", $ownerName, $repoName);
         // Write the data to a file
-        $this->writeData("pullRequestsWithReviewNone.txt", $pullRequestsWithReviewNone);
+        $this->writeData("pullRequestsWithReviewNone.txt", $pullRequestsWithReviewNone, $ownerName, $repoName);
 
         // Fetch pull requests where review status is success
         $pullRequestsWithReviewSuccess = $this->fetchPullRequests("+review:success", $ownerName, $repoName);
         // Write the data to a file
-        $this->writeData("pullRequestsWithReviewSuccess.txt", $pullRequestsWithReviewSuccess);
+        $this->writeData("pullRequestsWithReviewSuccess.txt", $pullRequestsWithReviewSuccess, $ownerName, $repoName);
 
 
         return response()->json([
-            'oldPullRequests' => $oldPullRequests,
-            'pullRequestsWithReviewRequired' => $pullRequestsWithReviewRequired,
-            'pullRequestsWithReviewNone' => $pullRequestsWithReviewNone,
-            'pullRequestsWithReviewSuccess' => $pullRequestsWithReviewSuccess
+            'message' => 'Data has been written to files'
         ]);
     }
 
 
 
-    private function writeToTxtFile($fileName, $data)
+    private function writeToTxtFile($fileName, $data, $ownerName, $repoName)
     {
         try {
-            // check if file exists
-            if (file_exists($fileName)) {
-                // if file exists, delete it
-                unlink($fileName);
+            $directory = public_path("/pull-requests/{$ownerName}-{$repoName}");
+
+            // Check if directory exists, if not, create it
+            if (!file_exists($directory)) {
+                mkdir($directory, 0777, true);
             }
+
+            // Check if file exists within the directory
+            $filePath = $directory . '/' . $fileName;
+            if (file_exists($filePath)) {
+                // if file exists, delete it
+                unlink($filePath);
+            }
+
             // create a new file
-            $file = fopen($fileName, "w");
+            $file = fopen($filePath, "w");
             fwrite($file, $data);
             fclose($file);
         } catch (\Exception $e) {
@@ -101,7 +107,7 @@ class PullRequestController extends Controller
         }
     }
 
-    private function writeData($fileName, $pullRequests)
+    private function writeData($fileName, $pullRequests, $ownerName, $repoName)
     {
         $data = "";
         foreach ($pullRequests as $pullRequest) {
@@ -114,6 +120,6 @@ class PullRequestController extends Controller
             $data .= "User URL: " . $pullRequest["user"]["html_url"] . "\n";
             $data .= "----------------------------------------------------------------------\n";
         }
-        $this->writeToTxtFile($fileName, $data);
+        $this->writeToTxtFile($fileName, $data,  $ownerName, $repoName);
     }
 }

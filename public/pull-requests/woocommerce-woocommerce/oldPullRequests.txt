@@ -1,0 +1,240 @@
+ID: 2088315597
+Title: fixed the broken link to settings-api
+URL: https://github.com/woocommerce/woocommerce/pull/43788
+Created at: 2024-01-18T13:41:11Z
+Updated at: 2024-01-18T13:41:38Z
+User: babarkhuroo
+User URL: https://github.com/babarkhuroo
+----------------------------------------------------------------------
+ID: 2088283658
+Title: Allow providing meta fields starting with "meta_data_" as regular fields on the REST API
+URL: https://github.com/woocommerce/woocommerce/pull/43786
+Created at: 2024-01-18T13:24:15Z
+Updated at: 2024-01-25T16:11:17Z
+User: nathanss
+User URL: https://github.com/nathanss
+----------------------------------------------------------------------
+ID: 2088190757
+Title: Add additional checkout fields documentation
+URL: https://github.com/woocommerce/woocommerce/pull/43782
+Created at: 2024-01-18T12:30:35Z
+Updated at: 2024-01-29T12:23:38Z
+User: opr
+User URL: https://github.com/opr
+----------------------------------------------------------------------
+ID: 2087915408
+Title: Refactor: replace QueryFilters by ProductQueryFiltersServiceProvider
+URL: https://github.com/woocommerce/woocommerce/pull/43772
+Created at: 2024-01-18T09:52:08Z
+Updated at: 2024-02-02T09:58:17Z
+User: dinhtungdu
+User URL: https://github.com/dinhtungdu
+----------------------------------------------------------------------
+ID: 2086003061
+Title: More defensive coding when using `$product->get_attributes()`
+URL: https://github.com/woocommerce/woocommerce/pull/43739
+Created at: 2024-01-17T11:36:47Z
+Updated at: 2024-01-19T12:34:13Z
+User: lsinger
+User URL: https://github.com/lsinger
+----------------------------------------------------------------------
+ID: 2085664884
+Title: 41798-improve-update-product-stock-query-performance
+URL: https://github.com/woocommerce/woocommerce/pull/43729
+Created at: 2024-01-17T08:26:33Z
+Updated at: 2024-01-17T08:27:23Z
+User: duotive
+User URL: https://github.com/duotive
+----------------------------------------------------------------------
+ID: 2085413565
+Title: Product Editor: Subsection block
+URL: https://github.com/woocommerce/woocommerce/pull/43725
+Created at: 2024-01-17T05:18:46Z
+Updated at: 2024-02-01T11:21:40Z
+User: octaedro
+User URL: https://github.com/octaedro
+----------------------------------------------------------------------
+ID: 2084949871
+Title: Shard daily e2e test execution
+URL: https://github.com/woocommerce/woocommerce/pull/43719
+Created at: 2024-01-16T21:15:10Z
+Updated at: 2024-01-24T23:20:34Z
+User: lanej0
+User URL: https://github.com/lanej0
+----------------------------------------------------------------------
+ID: 2083982810
+Title: Add aria-label to My Account Navigation Item
+URL: https://github.com/woocommerce/woocommerce/pull/43696
+Created at: 2024-01-16T13:36:42Z
+Updated at: 2024-01-16T13:36:42Z
+User: masteradhoc
+User URL: https://github.com/masteradhoc
+----------------------------------------------------------------------
+ID: 2079264843
+Title: Docs: migrate Template structure & Overriding templates via a theme
+URL: https://github.com/woocommerce/woocommerce/pull/43571
+Created at: 2024-01-12T16:45:42Z
+Updated at: 2024-02-01T11:49:21Z
+User: wavvves
+User URL: https://github.com/wavvves
+----------------------------------------------------------------------
+ID: 2077478394
+Title: adding context to UX documentation
+URL: https://github.com/woocommerce/woocommerce/pull/43535
+Created at: 2024-01-11T19:55:17Z
+Updated at: 2024-02-02T16:02:55Z
+User: brentmackinnon
+User URL: https://github.com/brentmackinnon
+----------------------------------------------------------------------
+ID: 2076787068
+Title: Add Filter Hook in OrdersScheduler.php for Customizing WooCommerce Analytics Data
+URL: https://github.com/woocommerce/woocommerce/pull/43515
+Created at: 2024-01-11T14:16:39Z
+Updated at: 2024-01-12T09:26:45Z
+User: Aunshon
+User URL: https://github.com/Aunshon
+----------------------------------------------------------------------
+ID: 2076347441
+Title: Add the Receipts Rendering Engine
+URL: https://github.com/woocommerce/woocommerce/pull/43502
+Created at: 2024-01-11T11:18:35Z
+Updated at: 2024-02-02T12:44:17Z
+User: Konamiman
+User URL: https://github.com/Konamiman
+----------------------------------------------------------------------
+ID: 2076138039
+Title: Experimental: Add Mini Cart as an ALLOWED_BLOCK for core Navigation
+URL: https://github.com/woocommerce/woocommerce/pull/43498
+Created at: 2024-01-11T09:28:16Z
+Updated at: 2024-01-19T08:33:11Z
+User: tjcafferkey
+User URL: https://github.com/tjcafferkey
+----------------------------------------------------------------------
+ID: 2075895365
+Title: Update @wordpress/components, core-data and React to 18
+URL: https://github.com/woocommerce/woocommerce/pull/43494
+Created at: 2024-01-11T06:52:28Z
+Updated at: 2024-01-16T07:19:08Z
+User: samueljseay
+User URL: https://github.com/samueljseay
+----------------------------------------------------------------------
+ID: 2075171777
+Title: Fix typo in the Exposing your data in the Store API documentation
+URL: https://github.com/woocommerce/woocommerce/pull/43488
+Created at: 2024-01-10T20:43:30Z
+Updated at: 2024-01-10T20:45:27Z
+User: Rahmon
+User URL: https://github.com/Rahmon
+----------------------------------------------------------------------
+ID: 2073001541
+Title: WooCommerce Asset Build Aliases
+URL: https://github.com/woocommerce/woocommerce/pull/43433
+Created at: 2024-01-09T19:12:40Z
+Updated at: 2024-01-19T08:52:28Z
+User: ObliviousHarmony
+User URL: https://github.com/ObliviousHarmony
+----------------------------------------------------------------------
+ID: 2072963465
+Title: No need of nofollow if now purchasable or not in store
+URL: https://github.com/woocommerce/woocommerce/pull/43432
+Created at: 2024-01-09T18:50:02Z
+Updated at: 2024-01-10T11:06:16Z
+User: niharikamahajan02
+User URL: https://github.com/niharikamahajan02
+----------------------------------------------------------------------
+ID: 2072414961
+Title: Testing CI
+URL: https://github.com/woocommerce/woocommerce/pull/43418
+Created at: 2024-01-09T13:54:07Z
+Updated at: 2024-01-09T13:54:22Z
+User: vedanshujain
+User URL: https://github.com/vedanshujain
+----------------------------------------------------------------------
+ID: 2070753565
+Title: resolved issue 42040 overlapping problem
+URL: https://github.com/woocommerce/woocommerce/pull/43369
+Created at: 2024-01-08T15:57:55Z
+Updated at: 2024-01-08T15:58:16Z
+User: niharikamahajan02
+User URL: https://github.com/niharikamahajan02
+----------------------------------------------------------------------
+ID: 2065374710
+Title: Block Hooks API: Add CustomerAccount block to header
+URL: https://github.com/woocommerce/woocommerce/pull/43267
+Created at: 2024-01-04T10:18:09Z
+Updated at: 2024-02-02T14:58:04Z
+User: tjcafferkey
+User URL: https://github.com/tjcafferkey
+----------------------------------------------------------------------
+ID: 2063900698
+Title: Include the selected collection in the product collection block context
+URL: https://github.com/woocommerce/woocommerce/pull/43247
+Created at: 2024-01-03T12:02:55Z
+Updated at: 2024-01-03T14:53:18Z
+User: xristos3490
+User URL: https://github.com/xristos3490
+----------------------------------------------------------------------
+ID: 2063140942
+Title: Apply Rector suggestions for PHP 8.1
+URL: https://github.com/woocommerce/woocommerce/pull/43233
+Created at: 2024-01-03T01:45:22Z
+Updated at: 2024-01-23T18:26:14Z
+User: asumaran
+User URL: https://github.com/asumaran
+----------------------------------------------------------------------
+ID: 2062689465
+Title: Bump tj-actions/changed-files from 37 to 41 in /.github/workflows
+URL: https://github.com/woocommerce/woocommerce/pull/43223
+Created at: 2024-01-02T16:53:17Z
+Updated at: 2024-02-01T17:23:42Z
+User: dependabot[bot]
+User URL: https://github.com/apps/dependabot
+----------------------------------------------------------------------
+ID: 2060810953
+Title: Fix/optional label in variation details
+URL: https://github.com/woocommerce/woocommerce/pull/43186
+Created at: 2023-12-30T17:44:12Z
+Updated at: 2024-01-31T12:12:12Z
+User: n2erjo00
+User URL: https://github.com/n2erjo00
+----------------------------------------------------------------------
+ID: 2057572570
+Title: [Product Block Editor]: add updateByKey to the useProductMetadata() hook
+URL: https://github.com/woocommerce/woocommerce/pull/43137
+Created at: 2023-12-27T16:34:06Z
+Updated at: 2023-12-27T19:20:31Z
+User: retrofox
+User URL: https://github.com/retrofox
+----------------------------------------------------------------------
+ID: 2056437489
+Title: [Product Block Editor]: sort the blocks list in the index file
+URL: https://github.com/woocommerce/woocommerce/pull/43115
+Created at: 2023-12-26T13:57:20Z
+Updated at: 2023-12-27T17:51:34Z
+User: retrofox
+User URL: https://github.com/retrofox
+----------------------------------------------------------------------
+ID: 2054550282
+Title: Fix is_read value in Admin notes
+URL: https://github.com/woocommerce/woocommerce/pull/43096
+Created at: 2023-12-22T22:26:37Z
+Updated at: 2024-01-15T17:23:05Z
+User: simranvijwani
+User URL: https://github.com/simranvijwani
+----------------------------------------------------------------------
+ID: 2053819281
+Title: Investigation: Use Promptfoo to evaluate IA results
+URL: https://github.com/woocommerce/woocommerce/pull/43077
+Created at: 2023-12-22T11:56:06Z
+Updated at: 2023-12-22T12:24:55Z
+User: gigitux
+User URL: https://github.com/gigitux
+----------------------------------------------------------------------
+ID: 2051136240
+Title: Fix for product meta lookup table incorrectly marking a product as onsale Closes #43008
+URL: https://github.com/woocommerce/woocommerce/pull/43011
+Created at: 2023-12-20T19:20:56Z
+Updated at: 2024-01-31T18:45:53Z
+User: pintend
+User URL: https://github.com/pintend
+----------------------------------------------------------------------
