@@ -21,7 +21,9 @@ class PullRequestController extends Controller
 
     private function fetchPullRequests($parameter, $ownerName, $repoName)
     {
+        // Set the maximum execution time to 1 hour
         ini_set("max_execution_time", 3600);
+
         try {
             $pullRequests = [];
             $page = 1;
