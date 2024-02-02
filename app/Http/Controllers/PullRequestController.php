@@ -34,4 +34,11 @@ class PullRequestController extends Controller
         }
         return $oldPullRequests;
     }
+
+    public function Main()
+    {
+        $pullRequests = $this->fetchOpenPullRequests();
+        $oldPullRequests = $this->fetchOldOpenPullRequests($pullRequests);
+        return response()->json($oldPullRequests);
+    }
 }
