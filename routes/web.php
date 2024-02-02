@@ -7,13 +7,15 @@ use App\Http\Controllers\RepositoryController;
 use App\Models\Repository;
 
 Route::get('/', function () {
-
-    return view('home', [
-        'repositories' => Repository::all()
-    ]);
+    if (auth()->check()) {
+        return view('home', [
+            'repositories' => Repository::all()
+        ]);
+    }
+    return view('home');
 });
 
-Route::get('/pull-requests/{ownerName}/{repoName}', [PullRequestController::class, 'Main']);
+Route::get('/pull-requests', [PullRequestController::class, 'Main']);
 
 // Auth routes
 Route::post('/register', [AuthController::class, 'register']);
@@ -22,3 +24,4 @@ Route::post('/login', [AuthController::class, 'login']);
 
 // Repositories routes
 Route::post('/add-repo', [RepositoryController::class, 'store']);
+Route::post('/delete-repo/{id}', [RepositoryController::class, 'delete']);
