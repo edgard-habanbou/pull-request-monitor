@@ -26,8 +26,3 @@ Route::post('/login', [AuthController::class, 'login']);
 // Repositories routes
 Route::post('/add-repo', [RepositoryController::class, 'store']);
 Route::post('/delete-repo/{id}', [RepositoryController::class, 'delete']);
-
-
-// Google Sheets routes
-Route::get('/add-sheet', [GoogleSheetsController::class, 'addToGoogleSheet']);
-Route::get('/redo-sheet', [GoogleSheetsController::class, 'redoSheet']);

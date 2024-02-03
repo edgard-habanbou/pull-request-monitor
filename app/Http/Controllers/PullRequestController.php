@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Repository;
+use Revolution\Google\Sheets\Facades\Sheets;
 use GuzzleHttp\Client;
 
 class PullRequestController extends Controller
@@ -90,21 +91,70 @@ class PullRequestController extends Controller
         }
     }
 
+    private function redoSheet($sheet_name)
+    {
+        Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))
+            ->sheet($sheet_name)
+            ->clear();
+    }
+
+    private function checkIfSheetExists($sheet_name)
+    {
+        $sheets = Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))->sheetList();
+        foreach ($sheets as $sheet) {
+            if ($sheet == $sheet_name) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private function addToGoogleSheet($data, $sheet_name)
+    {
+        // Check if the sheet exists, if not, create it
+        if (!$this->checkIfSheetExists($sheet_name)) {
+            Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))
+                ->addSheet($sheet_name);
+            Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))
+                ->sheet($sheet_name)
+                ->append([["ID", "Title", "URL", "Created at", "Updated at", "User", "User URL"]]);
+        } else {
+            $this->redoSheet($sheet_name);
+        }
+
+        // Add data to the sheet
+        Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))
+            ->sheet($sheet_name)
+            ->append($data);
+    }
+
     private function writeData($fileName, $pullRequests, $ownerName, $repoName)
     {
-        $data = "";
+        $data = [];
         foreach ($pullRequests as $pullRequest) {
-            $data .= "ID: " . $pullRequest["id"] . "\n";
-            $data .= "Title: " . $pullRequest["title"] . "\n";
-            $data .= "URL: " . $pullRequest["html_url"] . "\n";
-            $data .= "Created at: " . $pullRequest["created_at"] . "\n";
-            $data .= "Updated at: " . $pullRequest["updated_at"] . "\n";
-            $data .= "User: " . $pullRequest["user"]["login"] . "\n";
-            $data .= "User URL: " . $pullRequest["user"]["html_url"] . "\n";
-            $data .= "----------------------------------------------------------------------\n";
+            // $data .= "ID: " . $pullRequest["id"] . "\n";
+            // $data .= "Title: " . $pullRequest["title"] . "\n";
+            // $data .= "URL: " . $pullRequest["html_url"] . "\n";
+            // $data .= "Created at: " . $pullRequest["created_at"] . "\n";
+            // $data .= "Updated at: " . $pullRequest["updated_at"] . "\n";
+            // $data .= "User: " . $pullRequest["user"]["login"] . "\n";
+            // $data .= "User URL: " . $pullRequest["user"]["html_url"] . "\n";
+            // $data .= "----------------------------------------------------------------------\n";
+            $data[] = [
+                $pullRequest["id"],
+                $pullRequest["title"],
+                $pullRequest["html_url"],
+                $pullRequest["created_at"],
+                $pullRequest["updated_at"],
+                $pullRequest["user"]["login"],
+                $pullRequest["user"]["html_url"]
+            ];
         }
-        $this->writeToTxtFile($fileName, $data,  $ownerName, $repoName);
+        // $this->writeToTxtFile($fileName, $data,  $ownerName, $repoName);
+        $this->addToGoogleSheet($data, $ownerName . "-" . $repoName . "-" . $fileName);
     }
+
+
 
 
     public function Main()
@@ -122,22 +172,22 @@ class PullRequestController extends Controller
             $twoWeeksAgo = date('Y-m-d', strtotime('-2 weeks'));
             $oldPullRequests = $this->fetchPullRequests("+created:<" . $twoWeeksAgo, $ownerName, $repoName);
             // Write the data to a file
-            $this->writeData("oldPullRequests.txt", $oldPullRequests, $ownerName, $repoName);
+            $this->writeData("oldPullRequests", $oldPullRequests, $ownerName, $repoName);
 
             // Fetch pull requests that require review
             $pullRequestsWithReviewRequired = $this->fetchPullRequests("+review:required", $ownerName, $repoName);
             // Write the data to a file
-            $this->writeData("pullRequestsWithReviewRequired.txt", $pullRequestsWithReviewRequired, $ownerName, $repoName);
+            $this->writeData("pullRequestsWithReviewRequired", $pullRequestsWithReviewRequired, $ownerName, $repoName);
 
             // Fetch pull requests where review status is none
             $pullRequestsWithReviewNone = $this->fetchPullRequests("+review:none", $ownerName, $repoName);
             // Write the data to a file
-            $this->writeData("pullRequestsWithReviewNone.txt", $pullRequestsWithReviewNone, $ownerName, $repoName);
+            $this->writeData("pullRequestsWithReviewNone", $pullRequestsWithReviewNone, $ownerName, $repoName);
 
             // Fetch pull requests where review status is success
             $pullRequestsWithReviewSuccess = $this->fetchPullRequests("+review:success", $ownerName, $repoName);
             // Write the data to a file
-            $this->writeData("pullRequestsWithReviewSuccess.txt", $pullRequestsWithReviewSuccess, $ownerName, $repoName);
+            $this->writeData("pullRequestsWithReviewSuccess", $pullRequestsWithReviewSuccess, $ownerName, $repoName);
         }
 
 
