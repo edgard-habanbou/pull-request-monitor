@@ -62,48 +62,6 @@ class PullRequestController extends Controller
         }
     }
 
-
-    public function Main()
-    {
-        // Fetch all repositories
-        $repositories = Repository::all();
-
-
-        foreach ($repositories as $repository) {
-            // Get the owner and repository name
-            $ownerName = $repository->owner;
-            $repoName = $repository->name;
-
-            // Fetch pull requests that are older than two weeks
-            $twoWeeksAgo = date('Y-m-d', strtotime('-2 weeks'));
-            $oldPullRequests = $this->fetchPullRequests("+created:<" . $twoWeeksAgo, $ownerName, $repoName);
-            // Write the data to a file
-            $this->writeData("oldPullRequests.txt", $oldPullRequests, $ownerName, $repoName);
-
-            // Fetch pull requests that require review
-            $pullRequestsWithReviewRequired = $this->fetchPullRequests("+review:required", $ownerName, $repoName);
-            // Write the data to a file
-            $this->writeData("pullRequestsWithReviewRequired.txt", $pullRequestsWithReviewRequired, $ownerName, $repoName);
-
-            // Fetch pull requests where review status is none
-            $pullRequestsWithReviewNone = $this->fetchPullRequests("+review:none", $ownerName, $repoName);
-            // Write the data to a file
-            $this->writeData("pullRequestsWithReviewNone.txt", $pullRequestsWithReviewNone, $ownerName, $repoName);
-
-            // Fetch pull requests where review status is success
-            $pullRequestsWithReviewSuccess = $this->fetchPullRequests("+review:success", $ownerName, $repoName);
-            // Write the data to a file
-            $this->writeData("pullRequestsWithReviewSuccess.txt", $pullRequestsWithReviewSuccess, $ownerName, $repoName);
-        }
-
-
-        return response()->json([
-            'message' => 'Data has been written to files'
-        ]);
-    }
-
-
-
     private function writeToTxtFile($fileName, $data, $ownerName, $repoName)
     {
         try {
@@ -146,5 +104,45 @@ class PullRequestController extends Controller
             $data .= "----------------------------------------------------------------------\n";
         }
         $this->writeToTxtFile($fileName, $data,  $ownerName, $repoName);
+    }
+
+
+    public function Main()
+    {
+        // Fetch all repositories
+        $repositories = Repository::all();
+
+
+        foreach ($repositories as $repository) {
+            // Get the owner and repository name
+            $ownerName = $repository->owner;
+            $repoName = $repository->name;
+
+            // Fetch pull requests that are older than two weeks
+            $twoWeeksAgo = date('Y-m-d', strtotime('-2 weeks'));
+            $oldPullRequests = $this->fetchPullRequests("+created:<" . $twoWeeksAgo, $ownerName, $repoName);
+            // Write the data to a file
+            $this->writeData("oldPullRequests.txt", $oldPullRequests, $ownerName, $repoName);
+
+            // Fetch pull requests that require review
+            $pullRequestsWithReviewRequired = $this->fetchPullRequests("+review:required", $ownerName, $repoName);
+            // Write the data to a file
+            $this->writeData("pullRequestsWithReviewRequired.txt", $pullRequestsWithReviewRequired, $ownerName, $repoName);
+
+            // Fetch pull requests where review status is none
+            $pullRequestsWithReviewNone = $this->fetchPullRequests("+review:none", $ownerName, $repoName);
+            // Write the data to a file
+            $this->writeData("pullRequestsWithReviewNone.txt", $pullRequestsWithReviewNone, $ownerName, $repoName);
+
+            // Fetch pull requests where review status is success
+            $pullRequestsWithReviewSuccess = $this->fetchPullRequests("+review:success", $ownerName, $repoName);
+            // Write the data to a file
+            $this->writeData("pullRequestsWithReviewSuccess.txt", $pullRequestsWithReviewSuccess, $ownerName, $repoName);
+        }
+
+
+        return response()->json([
+            'message' => 'Data has been written to files'
+        ]);
     }
 }
