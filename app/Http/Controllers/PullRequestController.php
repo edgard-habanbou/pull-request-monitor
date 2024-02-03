@@ -93,39 +93,58 @@ class PullRequestController extends Controller
 
     private function redoSheet($sheet_name)
     {
-        Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))
-            ->sheet($sheet_name)
-            ->clear();
+        try {
+            Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))
+                ->sheet($sheet_name)
+                ->clear();
+        } catch (\Exception $e) {
+            return response()->json([
+                'error' => $e->getMessage()
+            ]);
+        }
     }
 
     private function checkIfSheetExists($sheet_name)
     {
-        $sheets = Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))->sheetList();
-        foreach ($sheets as $sheet) {
-            if ($sheet == $sheet_name) {
-                return true;
+        try {
+            // Check if the sheet exists
+            $sheets = Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))->sheetList();
+            foreach ($sheets as $sheet) {
+                if ($sheet == $sheet_name) {
+                    return true;
+                }
             }
+            return false;
+        } catch (\Exception $e) {
+            return response()->json([
+                'error' => $e->getMessage()
+            ]);
         }
-        return false;
     }
 
     private function addToGoogleSheet($data, $sheet_name)
     {
-        // Check if the sheet exists, if not, create it
-        if (!$this->checkIfSheetExists($sheet_name)) {
-            Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))
-                ->addSheet($sheet_name);
+        try {
+            // Check if the sheet exists, if not, create it
+            if (!$this->checkIfSheetExists($sheet_name)) {
+                Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))
+                    ->addSheet($sheet_name);
+                Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))
+                    ->sheet($sheet_name)
+                    ->append([["ID", "Title", "URL", "Created at", "Updated at", "User", "User URL"]]);
+            } else {
+                $this->redoSheet($sheet_name);
+            }
+
+            // Add data to the sheet
             Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))
                 ->sheet($sheet_name)
-                ->append([["ID", "Title", "URL", "Created at", "Updated at", "User", "User URL"]]);
-        } else {
-            $this->redoSheet($sheet_name);
+                ->append($data);
+        } catch (\Exception $e) {
+            return response()->json([
+                'error' => $e->getMessage()
+            ]);
         }
-
-        // Add data to the sheet
-        Sheets::spreadsheet(env('POST_SPREADSHEET_ID'))
-            ->sheet($sheet_name)
-            ->append($data);
     }
 
     private function writeData($fileName, $pullRequests, $ownerName, $repoName)
@@ -154,42 +173,44 @@ class PullRequestController extends Controller
         $this->addToGoogleSheet($data, $ownerName . "-" . $repoName . "-" . $fileName);
     }
 
+    private function processRepository($repository)
+    {
+        // Get the owner and repository name
+        $ownerName = $repository->owner;
+        $repoName = $repository->name;
 
+        // Fetch and write different types of pull requests
+        $this->fetchAndWritePullRequests("oldPullRequests", "+created:<" . $this->getTwoWeeksAgo(), $ownerName, $repoName);
+        $this->fetchAndWritePullRequests("pullRequestsWithReviewRequired", "+review:required", $ownerName, $repoName);
+        $this->fetchAndWritePullRequests("pullRequestsWithReviewNone", "+review:none", $ownerName, $repoName);
+        $this->fetchAndWritePullRequests("pullRequestsWithReviewSuccess", "+review:success", $ownerName, $repoName);
+    }
 
+    private function fetchAndWritePullRequests($fileName, $parameter, $ownerName, $repoName)
+    {
+        $pullRequests = $this->fetchPullRequests($parameter, $ownerName, $repoName);
+        $this->writeData($fileName, $pullRequests, $ownerName, $repoName);
+    }
+
+    private function getTwoWeeksAgo()
+    {
+        return date('Y-m-d', strtotime('-2 weeks'));
+    }
+
+    private function fetchRepositories()
+    {
+        return Repository::all();
+    }
 
     public function Main()
     {
         // Fetch all repositories
-        $repositories = Repository::all();
+        $repositories = $this->fetchRepositories();
 
-
+        // Process each repository
         foreach ($repositories as $repository) {
-            // Get the owner and repository name
-            $ownerName = $repository->owner;
-            $repoName = $repository->name;
-
-            // Fetch pull requests that are older than two weeks
-            $twoWeeksAgo = date('Y-m-d', strtotime('-2 weeks'));
-            $oldPullRequests = $this->fetchPullRequests("+created:<" . $twoWeeksAgo, $ownerName, $repoName);
-            // Write the data to a file
-            $this->writeData("oldPullRequests", $oldPullRequests, $ownerName, $repoName);
-
-            // Fetch pull requests that require review
-            $pullRequestsWithReviewRequired = $this->fetchPullRequests("+review:required", $ownerName, $repoName);
-            // Write the data to a file
-            $this->writeData("pullRequestsWithReviewRequired", $pullRequestsWithReviewRequired, $ownerName, $repoName);
-
-            // Fetch pull requests where review status is none
-            $pullRequestsWithReviewNone = $this->fetchPullRequests("+review:none", $ownerName, $repoName);
-            // Write the data to a file
-            $this->writeData("pullRequestsWithReviewNone", $pullRequestsWithReviewNone, $ownerName, $repoName);
-
-            // Fetch pull requests where review status is success
-            $pullRequestsWithReviewSuccess = $this->fetchPullRequests("+review:success", $ownerName, $repoName);
-            // Write the data to a file
-            $this->writeData("pullRequestsWithReviewSuccess", $pullRequestsWithReviewSuccess, $ownerName, $repoName);
+            $this->processRepository($repository);
         }
-
 
         return response()->json([
             'message' => 'Data has been written to files'
